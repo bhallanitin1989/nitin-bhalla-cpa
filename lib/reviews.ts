@@ -173,10 +173,12 @@ export const featuredReviews: Review[] = [
 
 const byId = (id: string) => featuredReviews.find((r) => r.id === id)!;
 
-/** Four shorter cards for the home Reviews section. */
+/** Featured cards for the home Reviews section (4–6). */
 export const homePreviewReviews: Review[] = [
+  byId("elizabeth-r"),
+  byId("ankita-i"),
+  byId("shane-h"),
   byId("nicole-a"),
   byId("gail-l"),
   byId("esther-b"),
-  byId("christie-f"),
 ];

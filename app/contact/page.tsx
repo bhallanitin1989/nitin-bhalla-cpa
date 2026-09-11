@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
-import { Clock, MapPin, Phone } from "lucide-react";
+import {
+  Calendar,
+  Clock,
+  ExternalLink,
+  Laptop,
+  Phone,
+} from "lucide-react";
 import ContactForm from "@/components/ContactForm";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact NB Tax and Advisory, CPA in New York — phone and office address.",
+    "Contact NB Tax and Advisory, CPA — virtual New York CPA firm. Call, book a consultation, or use the client portal; engagements are handled remotely.",
 };
 
 export default function ContactPage() {
@@ -21,9 +27,41 @@ export default function ContactPage() {
             Let&apos;s talk about what you need.
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-slate-600">
-            Reach {site.firmName} by phone, or prepare a short note below and
-            call when you are ready. No public email is listed on this site.
+            Reach {site.firmName} by phone, book a consultation, or prepare a
+            short note below. Engagements are handled virtually / remotely — no
+            office visit required. No public email is listed on this site.
           </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a
+              href={site.phoneHref}
+              className="inline-flex items-center gap-2 rounded-full bg-navy-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-teal-600"
+            >
+              <Phone className="h-4 w-4" aria-hidden />
+              Call {site.phone}
+            </a>
+            {site.calendlyUrl ? (
+              <a
+                href={site.calendlyUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-teal-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-teal-500"
+              >
+                <Calendar className="h-4 w-4" aria-hidden />
+                Book a consultation
+              </a>
+            ) : null}
+            {site.clientPortalUrl ? (
+              <a
+                href={site.clientPortalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-navy-900 transition hover:border-teal-500 hover:text-teal-600"
+              >
+                Client portal
+                <ExternalLink className="h-4 w-4" aria-hidden />
+              </a>
+            ) : null}
+          </div>
         </div>
       </section>
 
@@ -51,24 +89,16 @@ export default function ContactPage() {
                   </div>
                 </li>
                 <li className="flex gap-3">
-                  <MapPin
+                  <Laptop
                     className="mt-0.5 h-5 w-5 shrink-0 text-teal-600"
                     aria-hidden
                   />
                   <div>
-                    <p className="font-medium text-navy-900">Office</p>
-                    <address className="mt-1 not-italic leading-relaxed">
-                      {site.brandName}
-                      <br />
-                      <span className="text-xs text-slate-500">
-                        {site.legalName} d/b/a
-                      </span>
-                      <br />
-                      {site.address.line1}
-                      <br />
-                      {site.address.city}, {site.address.state}{" "}
-                      {site.address.zip}
-                    </address>
+                    <p className="font-medium text-navy-900">How we work</p>
+                    <p className="mt-1 leading-relaxed">
+                      Virtual CPA firm · New York licensed. Consultations and
+                      ongoing engagements are handled remotely nationwide.
+                    </p>
                   </div>
                 </li>
                 <li className="flex gap-3">
@@ -79,8 +109,8 @@ export default function ContactPage() {
                   <div>
                     <p className="font-medium text-navy-900">Appointments</p>
                     <p className="mt-1 leading-relaxed">
-                      By appointment. Call to find a time that works for your
-                      schedule.
+                      By appointment. Call to find a time that works, or use
+                      Book a consultation when you prefer to schedule online.
                     </p>
                   </div>
                 </li>
@@ -95,13 +125,37 @@ export default function ContactPage() {
                 Many clients start with a short phone conversation. Have your
                 questions and recent notices or documents nearby if you can.
               </p>
-              <a
-                href={site.phoneHref}
-                className="mt-5 inline-flex items-center gap-2 rounded-full bg-teal-600 px-5 py-3 text-sm font-semibold text-white hover:bg-teal-500"
-              >
-                <Phone className="h-4 w-4" aria-hidden />
-                Call {site.phone}
-              </a>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <a
+                  href={site.phoneHref}
+                  className="inline-flex items-center gap-2 rounded-full bg-teal-600 px-5 py-3 text-sm font-semibold text-white hover:bg-teal-500"
+                >
+                  <Phone className="h-4 w-4" aria-hidden />
+                  Call {site.phone}
+                </a>
+                {site.calendlyUrl ? (
+                  <a
+                    href={site.calendlyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white hover:bg-white/10"
+                  >
+                    <Calendar className="h-4 w-4" aria-hidden />
+                    Book a consultation
+                  </a>
+                ) : null}
+                {site.clientPortalUrl ? (
+                  <a
+                    href={site.clientPortalUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white hover:bg-white/10"
+                  >
+                    Client portal
+                    <ExternalLink className="h-4 w-4" aria-hidden />
+                  </a>
+                ) : null}
+              </div>
             </div>
           </div>
 

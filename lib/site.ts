@@ -7,6 +7,7 @@ export const site = {
   legalName: "Nitin Bhalla CPA PC",
   principal: "Nitin Bhalla, CPA",
   licenseNote: "Licensed Certified Public Accountant in New York",
+  /** Kept for legal / records; do not display when virtualFirm / showAddress is false. */
   address: {
     line1: "224 W 35th St Ste 500 #823",
     city: "New York",
@@ -14,12 +15,19 @@ export const site = {
     zip: "10001",
     full: "224 W 35th St Ste 500 #823, New York, NY 10001",
   },
+  /** Virtual CPA firm — street address is not shown in the UI. */
+  virtualFirm: true,
+  showAddress: false,
   phone: "(646) 992-4277",
   phoneHref: "tel:+16469924277",
   // No public email is published on this site. Add one here when available.
   email: null as string | null,
+  /** Set your Calendly (or booking) URL to show “Book a consultation” buttons. */
+  calendlyUrl: "https://calendly.com/blueinktaxes/30min" as string | null,
+  /** Set your client portal URL to show portal buttons site-wide. */
+  clientPortalUrl: "https://www.blueinktaxes.com/login" as string | null,
   tagline:
-    "Thoughtful tax and accounting support for individuals and growing businesses in New York — from NB Tax and Advisory, CPA.",
+    "A virtual New York CPA firm — nationwide and remote-friendly tax, accounting, and IRS support from NB Tax and Advisory, CPA.",
   focus: [
     "Individual & business tax preparation",
     "S-corp and LLC returns",
@@ -46,46 +54,14 @@ export type NavItem = {
   children?: readonly NavChild[];
 };
 
+/** Flat primary navigation — no dropdowns. */
 export const navLinks: readonly NavItem[] = [
   { href: "/", label: "Home" },
-  {
-    href: "/services/",
-    label: "Services",
-    children: [
-      { href: "/services/tax-preparation/", label: "Tax preparation" },
-      { href: "/services/s-corp-llc/", label: "S-corp & LLC returns" },
-      { href: "/services/payroll-compliance/", label: "Payroll & compliance" },
-      { href: "/services/irs-representation/", label: "IRS representation" },
-      { href: "/services/tax-planning/", label: "Tax planning" },
-      { href: "/services/bookkeeping/", label: "Bookkeeping support" },
-    ],
-  },
-  {
-    href: "/tax-relief/",
-    label: "Tax Relief",
-    children: [
-      { href: "/tax-relief/unfiled-returns/", label: "Unfiled returns" },
-      { href: "/tax-relief/irs-notices/", label: "IRS notices" },
-      {
-        href: "/tax-relief/installment-agreements/",
-        label: "Installment agreements",
-      },
-      { href: "/tax-relief/penalty-relief/", label: "Penalty relief" },
-      { href: "/tax-relief/levy-lien/", label: "Levy & lien" },
-      {
-        href: "/tax-relief/offer-in-compromise/",
-        label: "Offer in Compromise",
-      },
-      {
-        href: "/tax-relief/currently-not-collectible/",
-        label: "Currently not collectible",
-      },
-    ],
-  },
+  { href: "/services/", label: "Services" },
+  { href: "/tax-relief/", label: "Tax Relief" },
   { href: "/about/", label: "About" },
-  { href: "/who-we-serve/", label: "Who We Serve" },
-  { href: "/recent-cases/", label: "Recent Cases" },
   { href: "/reviews/", label: "Reviews" },
+  { href: "/recent-cases/", label: "Recent Cases" },
   { href: "/faq/", label: "FAQ" },
   { href: "/contact/", label: "Contact" },
 ] as const;

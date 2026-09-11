@@ -84,8 +84,8 @@ export default function AboutPage() {
                     {site.legalName}
                   </li>
                   <li>
-                    <strong className="text-navy-900">Office:</strong>{" "}
-                    {site.address.full}
+                    <strong className="text-navy-900">Practice:</strong>{" "}
+                    Virtual CPA firm · New York licensed
                   </li>
                 </ul>
               </div>

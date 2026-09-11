@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MapPin, Phone } from "lucide-react";
+import { Calendar, ExternalLink, Phone } from "lucide-react";
 import { footerNavLinks, site } from "@/lib/site";
 
 export default function Footer() {
@@ -43,13 +43,8 @@ export default function Footer() {
             Contact
           </h2>
           <ul className="mt-4 space-y-3 text-sm text-slate-100/80">
-            <li className="flex gap-3">
-              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-teal-500" aria-hidden />
-              <address className="not-italic">
-                {site.address.line1}
-                <br />
-                {site.address.city}, {site.address.state} {site.address.zip}
-              </address>
+            <li className="text-slate-100/80">
+              Virtual CPA firm · New York licensed
             </li>
             <li>
               <a
@@ -60,6 +55,38 @@ export default function Footer() {
                 {site.phone}
               </a>
             </li>
+            {site.calendlyUrl ? (
+              <li>
+                <a
+                  href={site.calendlyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 transition hover:text-teal-500"
+                >
+                  <Calendar
+                    className="h-4 w-4 shrink-0 text-teal-500"
+                    aria-hidden
+                  />
+                  Book a consultation
+                </a>
+              </li>
+            ) : null}
+            {site.clientPortalUrl ? (
+              <li>
+                <a
+                  href={site.clientPortalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 transition hover:text-teal-500"
+                >
+                  <ExternalLink
+                    className="h-4 w-4 shrink-0 text-teal-500"
+                    aria-hidden
+                  />
+                  Client portal
+                </a>
+              </li>
+            ) : null}
           </ul>
         </div>
       </div>

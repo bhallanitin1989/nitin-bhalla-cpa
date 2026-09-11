@@ -24,7 +24,7 @@ npm run build
 
 Firm details live in one place:
 
-- `lib/site.ts` — brand/legal names, address, phone, tagline, disclaimer, nav (with dropdown children)
+- `lib/site.ts` — brand/legal names, address (kept for records; UI gated by `virtualFirm` / `showAddress`), phone, tagline, disclaimer, flat nav, `calendlyUrl`, `clientPortalUrl`
 - `lib/services.ts` — service detail pages under `/services/[slug]/`
 - `lib/tax-relief.ts` — tax relief detail pages under `/tax-relief/[slug]/`
 - `lib/cases.ts` — redacted case outcome documents for the Recent Cases page (starts empty)
@@ -32,7 +32,18 @@ Firm details live in one place:
 - Page copy — `app/**/page.tsx`
 - Shared chrome — `components/Header.tsx`, `components/Footer.tsx`, `components/ContactForm.tsx`
 
-**Email:** No public email is published (none was provided). Contact is phone + address, with a form that prepares notes and prompts a call. To add email later, set `site.email` in `lib/site.ts` and wire a `mailto:` link or form action.
+**Email:** No public email is published (none was provided). Contact is phone-first (virtual firm — no street address shown), with a form that prepares notes and prompts a call. To add email later, set `site.email` in `lib/site.ts` and wire a `mailto:` link or form action.
+
+**Calendly & client portal:** Set URLs in `lib/site.ts`:
+
+```ts
+calendlyUrl: "https://calendly.com/your-link" as string | null,
+clientPortalUrl: "https://www.example.com/login" as string | null,
+```
+
+When non-null, Header / Home / Contact / Footer show **Book a consultation** and **Client portal** buttons (open in a new tab with `rel="noopener noreferrer"`). When `null`, those buttons are omitted. Current values: Calendly `https://calendly.com/blueinktaxes/30min`, portal `https://www.blueinktaxes.com/login`.
+
+**Virtual firm:** `virtualFirm: true` and `showAddress: false` hide the street address across the UI. Address data remains in `site.address` for legal/records only.
 
 **Recent Cases PDFs:** Redact ALL SSNs, EINs, names, addresses, and account numbers. Put the PDF in `public/cases/YYYY/descriptive-name.pdf`, add one entry to `lib/cases.ts`, then rebuild/redeploy. See `public/cases/README.md`. Do not invent sample letters.
 

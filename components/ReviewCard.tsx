@@ -11,7 +11,7 @@ function StarRating({ rating }: { rating: number }) {
         <Star
           key={i}
           className={`h-4 w-4 ${
-            i < rating ? "fill-teal-500 text-teal-500" : "text-slate-200"
+            i < rating ? "fill-gold-500 text-gold-500" : "text-slate-200"
           }`}
           aria-hidden
         />
@@ -28,7 +28,7 @@ export default function ReviewCard({
   compact?: boolean;
 }) {
   return (
-    <article className="flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
+    <article className="flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:shadow-md">
       <StarRating rating={review.rating} />
       <blockquote
         className={`mt-4 flex-1 text-sm leading-relaxed text-slate-600 ${
@@ -43,7 +43,7 @@ export default function ReviewCard({
           {review.date}
           {review.category ? ` · ${review.category}` : ""}
         </p>
-        <p className="mt-1 text-xs font-medium text-teal-700">via Thumbtack</p>
+        <p className="mt-1 text-xs font-medium text-gold-500">via Thumbtack</p>
       </footer>
     </article>
   );

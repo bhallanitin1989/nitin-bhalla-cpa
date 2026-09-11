@@ -2,21 +2,32 @@ import Link from "next/link";
 import { Calendar, Phone } from "lucide-react";
 import { footerNavLinks, site } from "@/lib/site";
 
+const explorePrimary = footerNavLinks.filter((link) =>
+  ["/", "/services/", "/tax-relief/", "/about/", "/recent-cases/", "/resources/", "/contact/"].includes(
+    link.href,
+  ),
+);
+
+const exploreResources = footerNavLinks.filter((link) =>
+  link.href.startsWith("/resources/") && link.href !== "/resources/",
+);
+
 export default function Footer() {
   return (
     <footer className="mt-auto border-t border-slate-100 bg-navy-950 text-slate-100">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-3 lg:px-8">
-        <div>
+      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
+        <div className="lg:col-span-1">
           <p className="font-[family-name:var(--font-display)] text-xl font-semibold text-white">
             {site.brandName}
           </p>
           <p className="mt-2 text-sm text-slate-500">{site.principal}</p>
           <p className="mt-1 text-sm text-slate-500">{site.licenseNote}</p>
-          <p className="mt-3 text-xs leading-relaxed text-slate-500">
+          <div className="gold-divider mt-4 opacity-80" />
+          <p className="mt-4 text-xs leading-relaxed text-slate-500">
             {site.legalName} d/b/a {site.brandName}
           </p>
-          <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-500">
-            {site.tagline}
+          <p className="mt-3 max-w-xs text-sm leading-relaxed text-slate-500">
+            Virtual New York CPA support — nationwide and remote-friendly.
           </p>
         </div>
 
@@ -25,7 +36,25 @@ export default function Footer() {
             Explore
           </h2>
           <ul className="mt-4 space-y-2">
-            {footerNavLinks.map((link) => (
+            {explorePrimary.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="text-sm text-slate-100/80 transition hover:text-teal-500"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-sm font-semibold uppercase tracking-wider text-teal-500">
+            Resources
+          </h2>
+          <ul className="mt-4 space-y-2">
+            {exploreResources.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
@@ -43,9 +72,7 @@ export default function Footer() {
             Contact
           </h2>
           <ul className="mt-4 space-y-3 text-sm text-slate-100/80">
-            <li className="text-slate-100/80">
-              Virtual CPA firm · New York licensed
-            </li>
+            <li>Virtual CPA firm · New York licensed</li>
             <li>
               <a
                 href={site.phoneHref}

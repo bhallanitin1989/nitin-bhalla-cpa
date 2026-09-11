@@ -142,7 +142,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-2.5 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link
           href="/"
           className="group flex min-w-0 items-center"
@@ -153,7 +153,7 @@ export default function Header() {
             alt={site.logoAlt}
             width={240}
             height={64}
-            className="h-14 w-auto object-contain sm:h-16"
+            className="h-16 w-auto object-contain sm:h-[4.5rem]"
             priority
           />
         </Link>
@@ -171,30 +171,30 @@ export default function Header() {
               href={site.calendlyUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-1 inline-flex items-center gap-1.5 rounded-full border border-teal-600/30 px-3 py-2 text-sm font-semibold text-teal-700 transition hover:bg-teal-50"
+              className="ml-1 inline-flex items-center gap-1.5 rounded-full bg-teal-600 px-3.5 py-2 text-sm font-semibold text-white transition hover:bg-teal-500"
             >
               <Calendar className="h-4 w-4" aria-hidden />
               Book
             </a>
           ) : null}
+          <a
+            href={site.phoneHref}
+            className="ml-1 inline-flex items-center gap-2 rounded-full border border-slate-200 px-3.5 py-2 text-sm font-semibold text-navy-900 transition hover:border-teal-600 hover:bg-teal-50 hover:text-teal-700"
+          >
+            <Phone className="h-4 w-4" aria-hidden />
+            {site.phone}
+          </a>
           {site.clientPortalUrl ? (
             <a
               href={site.clientPortalUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 px-3 py-2 text-sm font-semibold text-navy-900 transition hover:bg-slate-50"
+              className="ml-1 inline-flex items-center gap-1.5 rounded-full border border-slate-200 px-3.5 py-2 text-sm font-semibold text-navy-900 transition hover:bg-slate-50"
             >
               Portal
               <ExternalLink className="h-3.5 w-3.5" aria-hidden />
             </a>
           ) : null}
-          <a
-            href={site.phoneHref}
-            className="ml-1 inline-flex items-center gap-2 rounded-full bg-navy-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-teal-600"
-          >
-            <Phone className="h-4 w-4" aria-hidden />
-            {site.phone}
-          </a>
         </nav>
 
         <div className="flex items-center gap-2 xl:hidden">

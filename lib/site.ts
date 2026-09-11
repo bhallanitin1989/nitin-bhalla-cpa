@@ -27,7 +27,7 @@ export const site = {
   /** Set your client portal URL to show the portal button in the Header only. */
   clientPortalUrl: "https://www.blueinktaxes.com/login" as string | null,
   tagline:
-    "A virtual New York CPA firm — nationwide and remote-friendly tax, accounting, and IRS support from NB Tax and Advisory, CPA.",
+    "Clear tax preparation, planning, and IRS support from a virtual New York CPA — nationwide and remote-friendly.",
   focus: [
     "Individual & business tax preparation",
     "S-corp and LLC returns",

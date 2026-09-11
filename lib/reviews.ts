@@ -13,7 +13,7 @@ export type Review = {
   quote: string;
 };
 
-/** Substantive 5★ Thumbtack reviews for the /reviews page (exact quotes). */
+/** Substantive 5★ Thumbtack reviews (exact quotes) for homepage and featured use. */
 export const featuredReviews: Review[] = [
   {
     id: "elizabeth-r",
@@ -177,8 +177,6 @@ const byId = (id: string) => featuredReviews.find((r) => r.id === id)!;
 export const homePreviewReviews: Review[] = [
   byId("elizabeth-r"),
   byId("ankita-i"),
-  byId("shane-h"),
+  byId("steve-y"),
   byId("nicole-a"),
-  byId("gail-l"),
-  byId("esther-b"),
 ];

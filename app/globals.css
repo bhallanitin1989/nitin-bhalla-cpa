@@ -12,6 +12,9 @@
   --teal-600: #0d9488;
   --teal-500: #14b8a6;
   --teal-50: #f0fdfa;
+  --gold-500: #b8944a;
+  --gold-400: #c9a85c;
+  --gold-50: #faf6ee;
   --white: #ffffff;
 }
 
@@ -27,6 +30,9 @@
   --color-teal-600: var(--teal-600);
   --color-teal-500: var(--teal-500);
   --color-teal-50: var(--teal-50);
+  --color-gold-500: var(--gold-500);
+  --color-gold-400: var(--gold-400);
+  --color-gold-50: var(--gold-50);
   --font-sans: var(--font-source-sans);
   --font-display: var(--font-source-serif);
 }
@@ -69,4 +75,67 @@ h4 {
 .skip-link:focus {
   left: 1rem;
   top: 1rem;
+}
+
+/* Shared button patterns */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  background: var(--teal-600);
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+  transition: background-color 0.15s ease;
+}
+
+.btn-primary:hover {
+  background: var(--teal-500);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(15, 27, 45, 0.18);
+  background: transparent;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--navy-900);
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-secondary:hover {
+  border-color: var(--teal-600);
+  background: var(--teal-50);
+  color: var(--teal-600);
+}
+
+.btn-secondary-on-dark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: transparent;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+  transition: background-color 0.15s ease;
+}
+
+.btn-secondary-on-dark:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.gold-divider {
+  height: 2px;
+  width: 3rem;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, var(--gold-500), var(--gold-400));
 }

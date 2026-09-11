@@ -31,6 +31,7 @@ export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/services/", label: "Services" },
   { href: "/tax-relief/", label: "Tax Relief" },
+  { href: "/recent-cases/", label: "Recent Cases" },
   { href: "/about/", label: "About" },
   { href: "/who-we-serve/", label: "Who We Serve" },
   { href: "/faq/", label: "FAQ" },

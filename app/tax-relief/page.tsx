@@ -316,6 +316,13 @@ export default function TaxReliefPage() {
               Call {site.phone}
             </a>
             <Link
+              href="/recent-cases/"
+              className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+            >
+              Recent Cases
+              <ArrowRight className="h-4 w-4" aria-hidden />
+            </Link>
+            <Link
               href="/contact/"
               className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
             >

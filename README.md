@@ -25,10 +25,13 @@ npm run build
 Firm details live in one place:
 
 - `lib/site.ts` — name, address, phone, tagline, disclaimer, nav links
+- `lib/cases.ts` — redacted case outcome documents for the Recent Cases page (starts empty)
 - Page copy — `app/**/page.tsx`
 - Shared chrome — `components/Header.tsx`, `components/Footer.tsx`, `components/ContactForm.tsx`
 
 **Email:** No public email is published (none was provided). Contact is phone + address, with a form that prepares notes and prompts a call. To add email later, set `site.email` in `lib/site.ts` and wire a `mailto:` link or form action.
+
+**Recent Cases PDFs:** Redact ALL SSNs, EINs, names, addresses, and account numbers. Put the PDF in `public/cases/YYYY/descriptive-name.pdf`, add one entry to `lib/cases.ts`, then rebuild/redeploy. See `public/cases/README.md`. Do not invent sample letters.
 
 Do not invent awards, clients, testimonials, or credentials beyond New York CPA licensure.
 

@@ -46,10 +46,13 @@ export default function AboutPage() {
               need — not a one-size package.
             </p>
             <p>
-              This practice does not claim awards, client lists, or testimonials
-              on this website. Trust is earned in the work itself: meeting
-              deadlines, returning calls, and giving you information you can
-              use.
+              Trust is earned in the work itself: meeting deadlines, returning
+              calls, and giving you information you can use. Client feedback
+              published on this site is sourced from Thumbtack — see the{" "}
+              <Link href="/reviews/" className="font-semibold text-teal-700 hover:text-navy-900">
+                Reviews
+              </Link>{" "}
+              page for featured comments and a link to the full profile.
             </p>
           </div>
 

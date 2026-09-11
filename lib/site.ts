@@ -85,6 +85,7 @@ export const navLinks: readonly NavItem[] = [
   { href: "/about/", label: "About" },
   { href: "/who-we-serve/", label: "Who We Serve" },
   { href: "/recent-cases/", label: "Recent Cases" },
+  { href: "/reviews/", label: "Reviews" },
   { href: "/faq/", label: "FAQ" },
   { href: "/contact/", label: "Contact" },
 ] as const;

@@ -4,13 +4,22 @@ import {
   Building2,
   Calculator,
   ClipboardCheck,
+  ExternalLink,
   FileText,
   Handshake,
   LifeBuoy,
   Phone,
   ShieldCheck,
+  Star,
   Users,
 } from "lucide-react";
+import ReviewCard from "@/components/ReviewCard";
+import {
+  homePreviewReviews,
+  overallRating,
+  reviewCount,
+  thumbtackUrl,
+} from "@/lib/reviews";
 import { site } from "@/lib/site";
 
 const snapshot = [
@@ -204,6 +213,56 @@ export default function HomePage() {
                 </p>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+
+      <section className="bg-slate-50">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div className="max-w-2xl">
+              <p className="text-sm font-semibold uppercase tracking-wider text-teal-600">
+                Reviews
+              </p>
+              <h2 className="mt-2 text-3xl font-semibold sm:text-4xl">
+                What Thumbtack clients say
+              </h2>
+              <p className="mt-3 flex flex-wrap items-center gap-2 text-slate-600">
+                <span className="inline-flex items-center gap-1 font-semibold text-navy-900">
+                  <Star
+                    className="h-4 w-4 fill-teal-500 text-teal-500"
+                    aria-hidden
+                  />
+                  {overallRating} / 5
+                </span>
+                <span aria-hidden>·</span>
+                <span>{reviewCount} Thumbtack reviews</span>
+              </p>
+            </div>
+            <a
+              href={thumbtackUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-teal-600 hover:text-navy-900"
+            >
+              See all on Thumbtack
+              <ExternalLink className="h-4 w-4" aria-hidden />
+            </a>
+          </div>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {homePreviewReviews.map((review) => (
+              <ReviewCard key={review.id} review={review} compact />
+            ))}
+          </div>
+          <div className="mt-8">
+            <Link
+              href="/reviews/"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-teal-600 hover:text-navy-900"
+            >
+              More featured reviews
+              <ArrowRight className="h-4 w-4" aria-hidden />
+            </Link>
           </div>
         </div>
       </section>

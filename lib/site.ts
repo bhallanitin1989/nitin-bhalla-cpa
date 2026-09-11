@@ -54,19 +54,29 @@ export type NavItem = {
   children?: readonly NavChild[];
 };
 
-/** Flat primary navigation — no dropdowns. */
+/** Primary navigation. Only Resources uses a dropdown. */
 export const navLinks: readonly NavItem[] = [
   { href: "/", label: "Home" },
   { href: "/services/", label: "Services" },
   { href: "/tax-relief/", label: "Tax Relief" },
   { href: "/about/", label: "About" },
   { href: "/recent-cases/", label: "Recent Cases" },
-  { href: "/faq/", label: "FAQ" },
+  {
+    href: "/resources/",
+    label: "Resources",
+    children: [
+      { href: "/resources/blog/", label: "Blog" },
+      { href: "/resources/tax-deadlines/", label: "Tax deadlines" },
+      { href: "/resources/calculators/", label: "Calculators" },
+      { href: "/resources/checklists/", label: "Checklists" },
+    ],
+  },
   { href: "/contact/", label: "Contact" },
 ] as const;
 
-/** Top-level links only — for the footer Explore list. */
-export const footerNavLinks = navLinks.map(({ href, label }) => ({
-  href,
-  label,
-}));
+/** Footer Explore list — top-level plus Resources children. */
+export const footerNavLinks = navLinks.flatMap((item) =>
+  item.children
+    ? [{ href: item.href, label: item.label }, ...item.children]
+    : [{ href: item.href, label: item.label }],
+);

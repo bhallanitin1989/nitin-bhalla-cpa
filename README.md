@@ -24,7 +24,8 @@ npm run build
 
 Firm details live in one place:
 
-- `lib/site.ts` — brand/legal names, address (kept for records; UI gated by `virtualFirm` / `showAddress`), phone, tagline, disclaimer, flat nav, `calendlyUrl`, `clientPortalUrl`
+- `lib/site.ts` — brand/legal names, address (kept for records; UI gated by `virtualFirm` / `showAddress`), phone, tagline, disclaimer, nav (Resources dropdown), `calendlyUrl`, `clientPortalUrl`
+- `lib/blog.ts` — educational blog posts for `/resources/blog/`
 - `lib/services.ts` — service detail pages under `/services/[slug]/`
 - `lib/tax-relief.ts` — tax relief detail pages under `/tax-relief/[slug]/`
 - `lib/cases.ts` — redacted case outcome documents for the Recent Cases page (starts empty)
@@ -128,4 +129,5 @@ Then rebuild. Links and assets will be prefixed correctly.
 ## Notes
 
 - `images.unoptimized: true` is required for static export / GitHub Pages.
-- Footer and FAQ include: *"This website provides general information and is not tax advice."*
+- Footer, Resources, and blog posts include: *"This website provides general information and is not tax advice."*
+- Header is logo-only (no firm name text). Resources is the only dropdown. There is no FAQ or Who We Serve page.

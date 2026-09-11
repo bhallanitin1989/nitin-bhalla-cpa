@@ -19,6 +19,7 @@ export const site = {
     "S-corp and LLC returns",
     "Payroll & compliance",
     "IRS representation (Form 2848)",
+    "Tax relief & resolution support",
     "Tax planning",
     "Bookkeeping support",
   ],
@@ -29,6 +30,7 @@ export const site = {
 export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/services/", label: "Services" },
+  { href: "/tax-relief/", label: "Tax Relief" },
   { href: "/about/", label: "About" },
   { href: "/who-we-serve/", label: "Who We Serve" },
   { href: "/faq/", label: "FAQ" },

@@ -6,6 +6,7 @@ import {
   ClipboardCheck,
   FileText,
   Handshake,
+  LifeBuoy,
   Phone,
   ShieldCheck,
   Users,
@@ -32,6 +33,12 @@ const snapshot = [
     icon: ShieldCheck,
     title: "IRS representation",
     body: "Form 2848 power of attorney support when you need a professional voice with the IRS.",
+  },
+  {
+    icon: LifeBuoy,
+    title: "Tax relief",
+    body: "Support for unfiled returns, notices, balances due, and resolution paths — with CPA-led guidance.",
+    href: "/tax-relief/",
   },
 ];
 
@@ -132,7 +139,7 @@ export default function HomePage() {
             complex issue, we keep the process organized and human.
           </p>
         </div>
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {snapshot.map((item) => (
             <article
               key={item.title}
@@ -147,6 +154,15 @@ export default function HomePage() {
               <p className="mt-2 text-sm leading-relaxed text-slate-600">
                 {item.body}
               </p>
+              {"href" in item && item.href ? (
+                <Link
+                  href={item.href}
+                  className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-teal-600 hover:text-navy-900"
+                >
+                  Learn more
+                  <ArrowRight className="h-4 w-4" aria-hidden />
+                </Link>
+              ) : null}
             </article>
           ))}
         </div>

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What services does the firm offer?",
-    a: "Nitin Bhalla CPA PC focuses on individual and business tax preparation, S-corp and LLC returns, payroll and compliance support, IRS representation (Form 2848), tax planning, and bookkeeping support.",
+    a: "Nitin Bhalla CPA PC focuses on individual and business tax preparation, S-corp and LLC returns, payroll and compliance support, IRS representation (Form 2848), tax relief and resolution support, tax planning, and bookkeeping support.",
   },
   {
     q: "Do I need to bring anything to a first conversation?",
@@ -21,6 +21,14 @@ const faqs = [
   {
     q: "Can you talk to the IRS for me?",
     a: "With a properly signed Form 2848 power of attorney, a CPA can represent you before the IRS on matters covered by that authorization. Whether representation is appropriate depends on your facts — ask during a consultation.",
+  },
+  {
+    q: "Do you help with tax debt or IRS collection issues?",
+    a: "Yes. The firm provides tax relief and resolution support, including help with unfiled returns, IRS notices, installment agreements, penalty relief requests, and evaluating options such as an Offer in Compromise or currently-not-collectible status when appropriate. Outcomes depend on your facts and IRS rules — no specific settlement result is guaranteed. See the Tax Relief page or call to discuss your situation.",
+  },
+  {
+    q: "Will hiring you stop an IRS levy immediately?",
+    a: "Not automatically. Engaging a CPA and signing Form 2848 allows representation, and there may be steps that can address collection activity depending on your case. Timing and results vary. Contact the firm promptly if you have received a levy or lien notice so your options can be reviewed.",
   },
   {
     q: "Do you work with freelancers and S-corps?",

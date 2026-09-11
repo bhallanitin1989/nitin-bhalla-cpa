@@ -8,13 +8,14 @@ import {
   FileSpreadsheet,
   Phone,
   Scale,
+  Shield,
 } from "lucide-react";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Tax preparation, planning, payroll, IRS representation, and bookkeeping support from Nitin Bhalla CPA PC.",
+    "Tax preparation, planning, payroll, IRS representation, tax relief, and bookkeeping support from Nitin Bhalla CPA PC.",
 };
 
 const services = [
@@ -61,6 +62,19 @@ const services = [
       "Representation conversations",
       "Organized response planning",
     ],
+  },
+  {
+    icon: Shield,
+    title: "Tax relief & resolution support",
+    body: "Help working through unfiled returns, balances due, notices, and collection concerns — with CPA-led guidance and Form 2848 representation when appropriate.",
+    points: [
+      "Unfiled returns catch-up",
+      "Installment agreement guidance",
+      "Penalty relief requests when warranted",
+      "Offer in Compromise evaluation when appropriate",
+    ],
+    href: "/tax-relief/",
+    cta: "Explore tax relief",
   },
   {
     icon: BookOpen,
@@ -133,6 +147,15 @@ export default function ServicesPage() {
                     </li>
                   ))}
                 </ul>
+                {"href" in service && service.href ? (
+                  <Link
+                    href={service.href}
+                    className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-teal-600 hover:text-navy-900"
+                  >
+                    {service.cta ?? "Learn more"}
+                    <ArrowRight className="h-4 w-4" aria-hidden />
+                  </Link>
+                ) : null}
               </div>
             </article>
           ))}

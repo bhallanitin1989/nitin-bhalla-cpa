@@ -13,7 +13,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Recent Cases",
   description:
-    "Redacted IRS resolution letters from Nitin Bhalla CPA PC — published with client permission when available. Past results do not guarantee future outcomes.",
+    "Redacted IRS resolution letters from NB Tax and Advisory, CPA — published with client permission when available. Past results do not guarantee future outcomes.",
 };
 
 function OutcomeBadge({ outcome }: { outcome: CaseDoc["outcome"] }) {

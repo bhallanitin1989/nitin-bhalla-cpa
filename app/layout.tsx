@@ -19,8 +19,8 @@ const sourceSerif = Source_Serif_4({
 
 export const metadata: Metadata = {
   title: {
-    default: `${site.firmName} | New York CPA`,
-    template: `%s | ${site.firmName}`,
+    default: `${site.brandName} | New York CPA`,
+    template: `%s | ${site.brandName}`,
   },
   description: site.tagline,
 };

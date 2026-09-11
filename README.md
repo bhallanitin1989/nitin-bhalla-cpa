@@ -1,6 +1,6 @@
-# Nitin Bhalla CPA PC — Marketing Website
+# NB Tax and Advisory, CPA — Marketing Website
 
-Professional marketing site for **Nitin Bhalla CPA PC**, a New York CPA practice.
+Professional marketing site for **NB Tax and Advisory, CPA** (legal entity: **Nitin Bhalla CPA PC**), a New York CPA practice.
 
 Stack: **Next.js (App Router) + TypeScript + Tailwind CSS**, configured for **static export** (`output: 'export'`) so it deploys cleanly to **GitHub Pages** or **Vercel**.
 
@@ -24,8 +24,11 @@ npm run build
 
 Firm details live in one place:
 
-- `lib/site.ts` — name, address, phone, tagline, disclaimer, nav links
+- `lib/site.ts` — brand/legal names, address, phone, tagline, disclaimer, nav (with dropdown children)
+- `lib/services.ts` — service detail pages under `/services/[slug]/`
+- `lib/tax-relief.ts` — tax relief detail pages under `/tax-relief/[slug]/`
 - `lib/cases.ts` — redacted case outcome documents for the Recent Cases page (starts empty)
+- Logo: `public/logo-nb-tax.png` (Header uses `/logo-nb-tax.png`)
 - Page copy — `app/**/page.tsx`
 - Shared chrome — `components/Header.tsx`, `components/Footer.tsx`, `components/ContactForm.tsx`
 
@@ -115,4 +118,3 @@ Then rebuild. Links and assets will be prefixed correctly.
 
 - `images.unoptimized: true` is required for static export / GitHub Pages.
 - Footer and FAQ include: *"This website provides general information and is not tax advice."*
-- Local build only — this project is not pushed to GitHub by the generator.

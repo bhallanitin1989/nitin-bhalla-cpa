@@ -13,7 +13,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Who We Serve",
   description:
-    "Individuals, freelancers, small businesses, and S-corps served by Nitin Bhalla CPA PC.",
+    "Individuals, freelancers, small businesses, and S-corps served by NB Tax and Advisory, CPA.",
 };
 
 const audiences = [

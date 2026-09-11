@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Meet Nitin Bhalla, CPA — principal of Nitin Bhalla CPA PC, a New York licensed CPA firm.",
+    "Meet Nitin Bhalla, CPA — principal of NB Tax and Advisory, CPA (Nitin Bhalla CPA PC), a New York licensed CPA firm.",
 };
 
 export default function AboutPage() {
@@ -73,8 +73,12 @@ export default function AboutPage() {
                     Certified Public Accountant
                   </li>
                   <li>
-                    <strong className="text-navy-900">Firm:</strong>{" "}
-                    {site.firmName}
+                    <strong className="text-navy-900">Brand:</strong>{" "}
+                    {site.brandName}
+                  </li>
+                  <li>
+                    <strong className="text-navy-900">Legal entity:</strong>{" "}
+                    {site.legalName}
                   </li>
                   <li>
                     <strong className="text-navy-900">Office:</strong>{" "}

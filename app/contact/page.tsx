@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact Nitin Bhalla CPA PC in New York — phone and office address.",
+    "Contact NB Tax and Advisory, CPA in New York — phone and office address.",
 };
 
 export default function ContactPage() {
@@ -58,7 +58,11 @@ export default function ContactPage() {
                   <div>
                     <p className="font-medium text-navy-900">Office</p>
                     <address className="mt-1 not-italic leading-relaxed">
-                      {site.firmName}
+                      {site.brandName}
+                      <br />
+                      <span className="text-xs text-slate-500">
+                        {site.legalName} d/b/a
+                      </span>
                       <br />
                       {site.address.line1}
                       <br />

@@ -4,61 +4,34 @@ import {
   ArrowRight,
   BadgeCheck,
   ClipboardList,
+  CircleDollarSign,
+  FileText,
   FileWarning,
   Handshake,
+  Landmark,
+  PauseCircle,
   Phone,
   Scale,
   Shield,
-  FileText,
-  Landmark,
-  CircleDollarSign,
-  PauseCircle,
 } from "lucide-react";
+import { taxReliefItems } from "@/lib/tax-relief";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Tax Relief",
   description:
-    "CPA-led tax relief and IRS resolution support from Nitin Bhalla CPA PC — unfiled returns, notices, installment agreements, penalty relief, and more.",
+    "CPA-led tax relief and IRS resolution support from NB Tax and Advisory, CPA — unfiled returns, notices, installment agreements, penalty relief, and more.",
 };
 
-const helpAreas = [
-  {
-    icon: FileText,
-    title: "Unfiled returns catch-up",
-    body: "Missing prior-year returns often block any lasting resolution. We help you organize records and get filings current so options with the IRS become clearer.",
-  },
-  {
-    icon: FileWarning,
-    title: "IRS notices & representation",
-    body: "Letters and notices deserve a calm, careful response. With a signed Form 2848, we can communicate with the IRS on matters covered by that authorization.",
-  },
-  {
-    icon: CircleDollarSign,
-    title: "Installment agreements",
-    body: "When a balance is owed, a structured payment plan may be an appropriate path. We review your situation and help you understand what the IRS typically expects.",
-  },
-  {
-    icon: Scale,
-    title: "Penalty relief requests",
-    body: "In some cases, penalty abatement or relief requests may be worth exploring. We evaluate whether your facts support a request and help prepare a clear submission.",
-  },
-  {
-    icon: Landmark,
-    title: "Levy & lien situations",
-    body: "Collection activity is stressful. We help you understand what a levy or lien means in practical terms and what steps may be available to address it.",
-  },
-  {
-    icon: Handshake,
-    title: "Offer in Compromise evaluation",
-    body: "An Offer in Compromise is not right for everyone. When your facts suggest it may be worth considering, we evaluate eligibility and next steps honestly — without overselling.",
-  },
-  {
-    icon: PauseCircle,
-    title: "Currently not collectible exploration",
-    body: "If paying would create genuine hardship, currently-not-collectible status may be appropriate to discuss. We review your financial picture and explain what that path involves.",
-  },
-];
+const icons = {
+  "unfiled-returns": FileText,
+  "irs-notices": FileWarning,
+  "installment-agreements": CircleDollarSign,
+  "penalty-relief": Scale,
+  "levy-lien": Landmark,
+  "offer-in-compromise": Handshake,
+  "currently-not-collectible": PauseCircle,
+} as const;
 
 const steps = [
   {
@@ -206,28 +179,40 @@ export default function TaxReliefPage() {
             </h2>
             <p className="mt-3 text-slate-600">
               Every case is different. These are areas where CPA-led support
-              often makes the process more manageable.
+              often makes the process more manageable — select a topic to learn
+              more.
             </p>
           </div>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {helpAreas.map((item) => (
-              <article
-                key={item.title}
-                className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm"
-              >
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-teal-50 text-teal-600">
-                  <item.icon
-                    className="h-6 w-6"
-                    aria-hidden
-                    strokeWidth={1.75}
-                  />
-                </div>
-                <h3 className="mt-4 text-lg font-semibold">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                  {item.body}
-                </p>
-              </article>
-            ))}
+            {taxReliefItems.map((item) => {
+              const Icon =
+                icons[item.slug as keyof typeof icons] ?? FileText;
+              return (
+                <Link
+                  key={item.slug}
+                  href={`/tax-relief/${item.slug}/`}
+                  className="group rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:border-teal-500/30 hover:shadow-md"
+                >
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-teal-50 text-teal-600">
+                    <Icon
+                      className="h-6 w-6"
+                      aria-hidden
+                      strokeWidth={1.75}
+                    />
+                  </div>
+                  <h3 className="mt-4 text-lg font-semibold group-hover:text-teal-600">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                    {item.summary}
+                  </p>
+                  <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-teal-600">
+                    Learn more
+                    <ArrowRight className="h-4 w-4" aria-hidden />
+                  </span>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -339,9 +324,10 @@ export default function TaxReliefPage() {
           <strong className="text-navy-900">Important disclaimer:</strong> This
           page provides general information only and is not tax, legal, or
           accounting advice. Outcomes depend on your specific facts and
-          applicable IRS rules. {site.firmName} does not guarantee any specific
-          settlement result, levy outcome, fee comparison, or refund of fees.
-          Please contact the firm to discuss your situation.
+          applicable IRS rules. {site.firmName} ({site.legalName} d/b/a) does
+          not guarantee any specific settlement result, levy outcome, fee
+          comparison, or refund of fees. Please contact the firm to discuss your
+          situation.
         </aside>
       </section>
     </>

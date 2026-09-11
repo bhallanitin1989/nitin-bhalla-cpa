@@ -1,6 +1,6 @@
 # Case outcome documents
 
-Redacted IRS closure / resolution letters published on the **Recent Cases** page.
+Redacted IRS closure / resolution letters published on the **Recent Cases** page for **NB Tax and Advisory, CPA** (Nitin Bhalla CPA PC).
 
 ## Before you add anything
 

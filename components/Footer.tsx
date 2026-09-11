@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { MapPin, Phone } from "lucide-react";
-import { navLinks, site } from "@/lib/site";
+import { footerNavLinks, site } from "@/lib/site";
 
 export default function Footer() {
   return (
@@ -8,10 +8,13 @@ export default function Footer() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-3 lg:px-8">
         <div>
           <p className="font-[family-name:var(--font-display)] text-xl font-semibold text-white">
-            {site.firmName}
+            {site.brandName}
           </p>
           <p className="mt-2 text-sm text-slate-500">{site.principal}</p>
           <p className="mt-1 text-sm text-slate-500">{site.licenseNote}</p>
+          <p className="mt-3 text-xs leading-relaxed text-slate-500">
+            {site.legalName} d/b/a {site.brandName}
+          </p>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-500">
             {site.tagline}
           </p>
@@ -22,7 +25,7 @@ export default function Footer() {
             Explore
           </h2>
           <ul className="mt-4 space-y-2">
-            {navLinks.map((link) => (
+            {footerNavLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
@@ -64,7 +67,8 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-6 text-xs text-slate-500 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
           <p>
-            © {new Date().getFullYear()} {site.firmName}. All rights reserved.
+            © {new Date().getFullYear()} {site.legalName} d/b/a {site.brandName}.
+            All rights reserved.
           </p>
           <p className="max-w-xl lg:text-right">{site.disclaimer}</p>
         </div>

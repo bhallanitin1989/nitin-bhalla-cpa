@@ -10,95 +10,23 @@ import {
   Scale,
   Shield,
 } from "lucide-react";
+import { services } from "@/lib/services";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Tax preparation, planning, payroll, IRS representation, tax relief, and bookkeeping support from Nitin Bhalla CPA PC.",
+    "Tax preparation, planning, payroll, IRS representation, tax relief, and bookkeeping support from NB Tax and Advisory, CPA.",
 };
 
-const services = [
-  {
-    icon: FileSpreadsheet,
-    title: "Individual & business tax preparation",
-    body: "Careful preparation of personal and business income tax returns. We gather the right documents, review your situation, and file with attention to accuracy and clarity.",
-    points: [
-      "Individual Form 1040 returns",
-      "Business entity returns",
-      "Organized document checklists",
-      "Clear explanation of key figures",
-    ],
-  },
-  {
-    icon: Calculator,
-    title: "S-corp & LLC returns",
-    body: "Entity filings for S corporations and LLCs, including coordination with owner returns when needed so nothing falls through the cracks.",
-    points: [
-      "S corporation Form 1120-S support",
-      "Partnership / multi-member LLC filings",
-      "Single-member LLC Schedule C coordination",
-      "Owner basis and distribution awareness",
-    ],
-  },
-  {
-    icon: ClipboardList,
-    title: "Payroll & compliance",
-    body: "Help staying current with payroll-related filings and day-to-day compliance so your team and records stay aligned.",
-    points: [
-      "Payroll filing support",
-      "Deposit and deadline awareness",
-      "Year-end W-2 / 1099 coordination",
-      "Practical compliance checklists",
-    ],
-  },
-  {
-    icon: Scale,
-    title: "IRS representation (Form 2848)",
-    body: "When the IRS contacts you, you do not have to navigate it alone. With a signed Form 2848 power of attorney, we can communicate with the IRS on your behalf.",
-    points: [
-      "Power of attorney (Form 2848)",
-      "Notice and letter review",
-      "Representation conversations",
-      "Organized response planning",
-    ],
-  },
-  {
-    icon: Shield,
-    title: "Tax relief & resolution support",
-    body: "Help working through unfiled returns, balances due, notices, and collection concerns — with CPA-led guidance and Form 2848 representation when appropriate.",
-    points: [
-      "Unfiled returns catch-up",
-      "Installment agreement guidance",
-      "Penalty relief requests when warranted",
-      "Offer in Compromise evaluation when appropriate",
-    ],
-    href: "/tax-relief/",
-    cta: "Explore tax relief",
-  },
-  {
-    icon: BookOpen,
-    title: "Tax planning",
-    body: "Planning conversations throughout the year — estimated payments, entity considerations, and timing decisions — so filing season is less reactive.",
-    points: [
-      "Estimated tax check-ins",
-      "Entity and election discussions",
-      "Year-end planning points",
-      "What-if scenarios in plain language",
-    ],
-  },
-  {
-    icon: Calculator,
-    title: "Bookkeeping support",
-    body: "Support keeping books organized enough for clean tax filings and better business decisions — without unnecessary complexity.",
-    points: [
-      "Book cleanup for tax season",
-      "Categorization guidance",
-      "Reconciliations support",
-      "Reports that make sense to owners",
-    ],
-  },
-];
+const icons = {
+  "tax-preparation": FileSpreadsheet,
+  "s-corp-llc": Calculator,
+  "payroll-compliance": ClipboardList,
+  "irs-representation": Scale,
+  "tax-planning": BookOpen,
+  bookkeeping: Calculator,
+} as const;
 
 export default function ServicesPage() {
   return (
@@ -119,46 +47,57 @@ export default function ServicesPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
-        <div className="grid gap-8">
-          {services.map((service) => (
-            <article
-              key={service.title}
-              className="grid gap-6 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm sm:p-8 lg:grid-cols-[auto_1fr]"
-            >
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-teal-50 text-teal-600">
-                <service.icon className="h-7 w-7" aria-hidden strokeWidth={1.75} />
+        <div className="grid gap-6 sm:grid-cols-2">
+          {services.map((service) => {
+            const Icon = icons[service.slug as keyof typeof icons] ?? Calculator;
+            return (
+              <Link
+                key={service.slug}
+                href={`/services/${service.slug}/`}
+                className="group flex flex-col rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:border-teal-500/30 hover:shadow-md sm:p-8"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-teal-50 text-teal-600">
+                  <Icon className="h-6 w-6" aria-hidden strokeWidth={1.75} />
+                </div>
+                <h2 className="mt-4 text-xl font-semibold group-hover:text-teal-600">
+                  {service.title}
+                </h2>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                  {service.summary}
+                </p>
+                <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-teal-600">
+                  Learn more
+                  <ArrowRight className="h-4 w-4" aria-hidden />
+                </span>
+              </Link>
+            );
+          })}
+
+          <Link
+            href="/tax-relief/"
+            className="group flex flex-col rounded-2xl border border-slate-100 bg-navy-900 p-6 text-white shadow-sm transition hover:bg-navy-800 sm:col-span-2 sm:p-8 lg:flex-row lg:items-center lg:justify-between lg:gap-8"
+          >
+            <div className="flex gap-4">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white/10 text-teal-500">
+                <Shield className="h-6 w-6" aria-hidden strokeWidth={1.75} />
               </div>
               <div>
-                <h2 className="text-2xl font-semibold">{service.title}</h2>
-                <p className="mt-3 max-w-3xl leading-relaxed text-slate-600">
-                  {service.body}
+                <h2 className="text-xl font-semibold text-white">
+                  Tax relief &amp; resolution support
+                </h2>
+                <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-100/80">
+                  Unfiled returns, notices, installment agreements, penalty
+                  relief, levy &amp; lien situations, Offer in Compromise
+                  evaluation, and currently-not-collectible exploration — with
+                  CPA-led Form 2848 representation when appropriate.
                 </p>
-                <ul className="mt-5 grid gap-2 sm:grid-cols-2">
-                  {service.points.map((point) => (
-                    <li
-                      key={point}
-                      className="flex items-start gap-2 text-sm text-slate-700"
-                    >
-                      <span
-                        className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600"
-                        aria-hidden
-                      />
-                      {point}
-                    </li>
-                  ))}
-                </ul>
-                {"href" in service && service.href ? (
-                  <Link
-                    href={service.href}
-                    className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-teal-600 hover:text-navy-900"
-                  >
-                    {service.cta ?? "Learn more"}
-                    <ArrowRight className="h-4 w-4" aria-hidden />
-                  </Link>
-                ) : null}
               </div>
-            </article>
-          ))}
+            </div>
+            <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-teal-500 lg:mt-0 lg:shrink-0">
+              Explore tax relief
+              <ArrowRight className="h-4 w-4" aria-hidden />
+            </span>
+          </Link>
         </div>
 
         <div className="mt-12 rounded-2xl bg-navy-900 p-8 text-white sm:flex sm:items-center sm:justify-between sm:gap-8">

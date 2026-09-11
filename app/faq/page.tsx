@@ -6,13 +6,13 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "FAQ",
   description:
-    "General frequently asked questions about working with Nitin Bhalla CPA PC. Educational information only — not tax advice.",
+    "General frequently asked questions about working with NB Tax and Advisory, CPA. Educational information only — not tax advice.",
 };
 
 const faqs = [
   {
     q: "What services does the firm offer?",
-    a: "Nitin Bhalla CPA PC focuses on individual and business tax preparation, S-corp and LLC returns, payroll and compliance support, IRS representation (Form 2848), tax relief and resolution support, tax planning, and bookkeeping support.",
+    a: "NB Tax and Advisory, CPA focuses on individual and business tax preparation, S-corp and LLC returns, payroll and compliance support, IRS representation (Form 2848), tax relief and resolution support, tax planning, and bookkeeping support.",
   },
   {
     q: "Do I need to bring anything to a first conversation?",

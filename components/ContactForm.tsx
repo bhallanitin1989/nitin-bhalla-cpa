@@ -116,6 +116,7 @@ export default function ContactForm() {
             <option>Tax planning</option>
             <option>Payroll & compliance</option>
             <option>IRS representation</option>
+            <option>Tax relief</option>
             <option>Bookkeeping support</option>
             <option>Other</option>
           </select>

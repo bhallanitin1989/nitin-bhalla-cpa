@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, BadgeCheck, Phone } from "lucide-react";
+import { thumbtackUrl } from "@/lib/reviews";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -49,10 +50,15 @@ export default function AboutPage() {
               Trust is earned in the work itself: meeting deadlines, returning
               calls, and giving you information you can use. Client feedback
               published on this site is sourced from Thumbtack — see the{" "}
-              <Link href="/reviews/" className="font-semibold text-teal-700 hover:text-navy-900">
-                Reviews
-              </Link>{" "}
-              page for featured comments and a link to the full profile.
+              <a
+                href={thumbtackUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-teal-700 hover:text-navy-900"
+              >
+                Thumbtack profile
+              </a>{" "}
+              for featured comments and the full review history.
             </p>
           </div>
 

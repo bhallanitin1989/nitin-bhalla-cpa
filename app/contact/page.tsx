@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import {
   Calendar,
   Clock,
-  ExternalLink,
   Laptop,
   Phone,
 } from "lucide-react";
@@ -12,7 +11,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact NB Tax and Advisory, CPA — virtual New York CPA firm. Call, book a consultation, or use the client portal; engagements are handled remotely.",
+    "Contact NB Tax and Advisory, CPA — virtual New York CPA firm. Call or book a consultation; engagements are handled remotely.",
 };
 
 export default function ContactPage() {
@@ -48,17 +47,6 @@ export default function ContactPage() {
               >
                 <Calendar className="h-4 w-4" aria-hidden />
                 Book a consultation
-              </a>
-            ) : null}
-            {site.clientPortalUrl ? (
-              <a
-                href={site.clientPortalUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-navy-900 transition hover:border-teal-500 hover:text-teal-600"
-              >
-                Client portal
-                <ExternalLink className="h-4 w-4" aria-hidden />
               </a>
             ) : null}
           </div>
@@ -142,17 +130,6 @@ export default function ContactPage() {
                   >
                     <Calendar className="h-4 w-4" aria-hidden />
                     Book a consultation
-                  </a>
-                ) : null}
-                {site.clientPortalUrl ? (
-                  <a
-                    href={site.clientPortalUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white hover:bg-white/10"
-                  >
-                    Client portal
-                    <ExternalLink className="h-4 w-4" aria-hidden />
                   </a>
                 ) : null}
               </div>

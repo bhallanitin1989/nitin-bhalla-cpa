@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Calendar, ExternalLink, Phone } from "lucide-react";
+import { Calendar, Phone } from "lucide-react";
 import { footerNavLinks, site } from "@/lib/site";
 
 export default function Footer() {
@@ -68,22 +68,6 @@ export default function Footer() {
                     aria-hidden
                   />
                   Book a consultation
-                </a>
-              </li>
-            ) : null}
-            {site.clientPortalUrl ? (
-              <li>
-                <a
-                  href={site.clientPortalUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 transition hover:text-teal-500"
-                >
-                  <ExternalLink
-                    className="h-4 w-4 shrink-0 text-teal-500"
-                    aria-hidden
-                  />
-                  Client portal
                 </a>
               </li>
             ) : null}

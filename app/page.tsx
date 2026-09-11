@@ -148,17 +148,6 @@ export default function HomePage() {
                 <ArrowRight className="h-4 w-4" aria-hidden />
               </Link>
             )}
-            {site.clientPortalUrl ? (
-              <a
-                href={site.clientPortalUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
-              >
-                Client portal
-                <ExternalLink className="h-4 w-4" aria-hidden />
-              </a>
-            ) : null}
           </div>
         </div>
       </section>
@@ -371,13 +360,15 @@ export default function HomePage() {
             ))}
           </div>
           <div className="mt-8">
-            <Link
-              href="/reviews/"
+            <a
+              href={thumbtackUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm font-semibold text-teal-600 hover:text-navy-900"
             >
-              More featured reviews
-              <ArrowRight className="h-4 w-4" aria-hidden />
-            </Link>
+              More featured reviews on Thumbtack
+              <ExternalLink className="h-4 w-4" aria-hidden />
+            </a>
           </div>
         </div>
       </section>
@@ -389,9 +380,8 @@ export default function HomePage() {
             Ready to talk through your next filing or question?
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-slate-100/80">
-            Call {site.firmName}, book a consultation when scheduling is
-            available, or use the client portal if you already have access.
-            Engagements are handled virtually / remotely.
+            Call {site.firmName} or book a consultation when scheduling is
+            available. Engagements are handled virtually / remotely.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <a
@@ -420,17 +410,6 @@ export default function HomePage() {
                 <ArrowRight className="h-4 w-4" aria-hidden />
               </Link>
             )}
-            {site.clientPortalUrl ? (
-              <a
-                href={site.clientPortalUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
-              >
-                Client portal
-                <ExternalLink className="h-4 w-4" aria-hidden />
-              </a>
-            ) : null}
           </div>
         </div>
       </section>

@@ -45,7 +45,7 @@ export default function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="group flex min-w-0 items-center gap-3"
+          className="group flex min-w-0 items-center"
           onClick={closeAll}
         >
           <Image
@@ -56,16 +56,6 @@ export default function Header() {
             className="h-10 w-auto object-contain sm:h-12"
             priority
           />
-          <span className="hidden min-w-0 flex-col sm:flex">
-            <span className="truncate font-[family-name:var(--font-display)] text-base font-semibold text-navy-900 group-hover:text-teal-600 sm:text-lg">
-              {site.brandName}
-            </span>
-            <span className="text-xs text-slate-500">
-              {site.virtualFirm
-                ? "Virtual CPA firm · New York licensed"
-                : site.licenseNote}
-            </span>
-          </span>
         </Link>
 
         <nav

@@ -24,7 +24,7 @@ export const site = {
   email: null as string | null,
   /** Set your Calendly (or booking) URL to show “Book a consultation” buttons. */
   calendlyUrl: "https://calendly.com/blueinktaxes/30min" as string | null,
-  /** Set your client portal URL to show portal buttons site-wide. */
+  /** Set your client portal URL to show the portal button in the Header only. */
   clientPortalUrl: "https://www.blueinktaxes.com/login" as string | null,
   tagline:
     "A virtual New York CPA firm — nationwide and remote-friendly tax, accounting, and IRS support from NB Tax and Advisory, CPA.",
@@ -60,7 +60,6 @@ export const navLinks: readonly NavItem[] = [
   { href: "/services/", label: "Services" },
   { href: "/tax-relief/", label: "Tax Relief" },
   { href: "/about/", label: "About" },
-  { href: "/reviews/", label: "Reviews" },
   { href: "/recent-cases/", label: "Recent Cases" },
   { href: "/faq/", label: "FAQ" },
   { href: "/contact/", label: "Contact" },

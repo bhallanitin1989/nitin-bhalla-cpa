@@ -14,7 +14,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Resources",
   description:
-    "Educational tax resources from NB Tax and Advisory, CPA — blog, federal deadlines, illustrative calculators, and client document checklists.",
+    "Educational tax resources from NB Tax and Advisory, CPA — blog, federal tax calendar, illustrative calculators, and client document checklists.",
 };
 
 const cards = [
@@ -25,10 +25,10 @@ const cards = [
     body: "Original articles on estimated taxes, S-corps, IRS notices, planning, and representation — written for a virtual New York CPA practice.",
   },
   {
-    href: "/resources/tax-deadlines/",
+    href: "/resources/tax-calendar/",
     icon: CalendarDays,
-    title: "Key federal tax deadlines",
-    body: "Year-aware filing, estimated-tax, and information-return dates. Educational calendar with a reminder that weekend and holiday rules can shift a due date.",
+    title: "Federal tax calendar",
+    body: "Month-grid calendar of filing, estimated-tax, information-return, and payroll dates. Educational only — weekend and holiday rules can shift a due date.",
   },
   {
     href: "/resources/calculators/",

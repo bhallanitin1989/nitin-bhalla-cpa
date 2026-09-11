@@ -264,7 +264,7 @@ If you expect to owe tax beyond withholding — common for freelancers, investor
 
 Those four dates are **not** equal three-month blocks. The second “quarter” is only two months (April and May). People who annualize income because work is seasonal should not blindly divide by four without looking at the period rules.
 
-See also [estimated taxes for freelancers](/resources/blog/estimated-taxes-for-freelancers/) and our [key federal tax deadlines](/resources/tax-deadlines/) page.
+See also [estimated taxes for freelancers](/resources/blog/estimated-taxes-for-freelancers/) and our [federal tax calendar](/resources/tax-calendar/) page.
 
 ## Payroll — more frequent than quarterly for many employers
 

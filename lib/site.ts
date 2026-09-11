@@ -66,7 +66,7 @@ export const navLinks: readonly NavItem[] = [
     label: "Resources",
     children: [
       { href: "/resources/blog/", label: "Blog" },
-      { href: "/resources/tax-deadlines/", label: "Tax deadlines" },
+      { href: "/resources/tax-calendar/", label: "Tax calendar" },
       { href: "/resources/calculators/", label: "Calculators" },
       { href: "/resources/checklists/", label: "Checklists" },
     ],

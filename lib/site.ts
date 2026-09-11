@@ -32,7 +32,7 @@ export const site = {
     "Individual & business tax preparation",
     "S-corp and LLC returns",
     "Payroll & compliance",
-    "IRS representation (Form 2848)",
+    "IRS representation",
     "Tax relief & resolution support",
     "Tax planning",
     "Bookkeeping support",

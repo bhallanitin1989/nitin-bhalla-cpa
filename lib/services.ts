@@ -78,25 +78,25 @@ export const services: ServiceItem[] = [
   },
   {
     slug: "irs-representation",
-    title: "IRS representation (Form 2848)",
+    title: "IRS representation",
     navLabel: "IRS representation",
     summary:
-      "Form 2848 power of attorney support when you need a professional voice with the IRS.",
+      "IRS representation support when you need a professional voice with the IRS.",
     heroEyebrow: "IRS representation",
     body: [
-      "When the IRS contacts you, you do not have to navigate every letter alone. With a properly signed Form 2848 power of attorney, NB Tax and Advisory, CPA can communicate with the IRS on matters covered by that authorization.",
-      "Representation often begins with reviewing notices, understanding what the IRS is asking for, and organizing a clear response plan. We explain what Form 2848 covers and what it does not — so expectations stay realistic.",
+      "When the IRS contacts you, you do not have to navigate every letter alone. With proper IRS representation authorization, NB Tax and Advisory, CPA can communicate with the IRS on matters covered by that authorization.",
+      "Representation often begins with reviewing notices, understanding what the IRS is asking for, and organizing a clear response plan. We explain what IRS representation covers and what it does not — so expectations stay realistic.",
       "Representation does not guarantee a particular outcome. Contact the firm promptly if you have received an IRS notice or request.",
     ],
     points: [
-      "Power of attorney (Form 2848)",
+      "IRS representation authorization",
       "Notice and letter review",
       "Representation conversations with the IRS",
       "Organized response planning",
       "Coordination with filings and tax relief work",
     ],
     metaDescription:
-      "IRS representation with Form 2848 from NB Tax and Advisory, CPA — notice review and CPA-led communication.",
+      "IRS representation from NB Tax and Advisory, CPA — notice review and CPA-led communication.",
   },
   {
     slug: "tax-planning",

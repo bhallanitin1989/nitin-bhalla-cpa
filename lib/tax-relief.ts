@@ -37,22 +37,22 @@ export const taxReliefItems: TaxReliefItem[] = [
     title: "IRS notices & correspondence",
     navLabel: "IRS notices",
     summary:
-      "Calm, careful review of IRS letters and notices, with Form 2848 representation when appropriate.",
+      "Calm, careful review of IRS letters and notices, with IRS representation when appropriate.",
     heroEyebrow: "IRS notices",
     body: [
       "IRS letters deserve a careful response — not panic. NB Tax and Advisory, CPA reviews notices, explains what they appear to request in plain language, and helps you plan next steps.",
-      "With a signed Form 2848, the firm can communicate with the IRS on authorized matters so you are not left fielding every call alone. We will not claim that every notice disappears overnight; we focus on accurate understanding and organized follow-through.",
+      "With IRS representation authorization in place, the firm can communicate with the IRS on authorized matters so you are not left fielding every call alone. We will not claim that every notice disappears overnight; we focus on accurate understanding and organized follow-through.",
       "Bring the notice (or a clear photo) when you call. This content is educational only and is not advice for your specific letter.",
     ],
     points: [
       "Notice and letter review",
       "Plain-language explanation of requests",
-      "Form 2848 representation when appropriate",
+      "IRS representation when appropriate",
       "Organized response planning",
       "Coordination with filings and balances due",
     ],
     metaDescription:
-      "IRS notice review and CPA representation from NB Tax and Advisory, CPA — Form 2848 support when appropriate.",
+      "IRS notice review and CPA representation from NB Tax and Advisory, CPA — IRS representation support when appropriate.",
   },
   {
     slug: "installment-agreements",
@@ -107,13 +107,13 @@ export const taxReliefItems: TaxReliefItem[] = [
     heroEyebrow: "Levy & lien",
     body: [
       "Collection activity is stressful. NB Tax and Advisory, CPA helps you understand what a levy or lien means in practical terms and what steps may be available depending on your facts and current IRS procedures.",
-      "Engaging a CPA and signing Form 2848 allows representation; it does not automatically stop every levy. Timing matters — contact the firm promptly if you have received a levy or lien notice.",
+      "Engaging a CPA and authorizing IRS representation allows the firm to speak with the IRS; it does not automatically stop every levy. Timing matters — contact the firm promptly if you have received a levy or lien notice.",
       "Educational content only. Do not rely on this page instead of speaking with the firm about your notice.",
     ],
     points: [
       "Plain-language levy and lien overview",
       "Urgent notice triage",
-      "Form 2848 representation when appropriate",
+      "IRS representation when appropriate",
       "Discussion of possible next steps",
       "Coordination with filings and payment options",
     ],

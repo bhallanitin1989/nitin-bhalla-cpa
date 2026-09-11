@@ -47,7 +47,7 @@ const steps = [
   {
     step: "3",
     title: "Build a representation plan",
-    body: "When appropriate, we prepare Form 2848 so the firm can speak with the IRS on your behalf, and we outline a clear plan for filings and responses.",
+    body: "When appropriate, we arrange IRS representation authorization so the firm can speak with the IRS on your behalf, and we outline a clear plan for filings and responses.",
   },
   {
     step: "4",
@@ -64,7 +64,7 @@ const whyCpa = [
   },
   {
     icon: Shield,
-    title: "Form 2848 representation",
+    title: "IRS representation",
     body: "With a properly signed power of attorney, we can deal with the IRS on authorized matters so you are not left fielding every call alone.",
   },
   {
@@ -97,7 +97,7 @@ export default function TaxReliefPage() {
             Unfiled returns, balances due, and collection notices can feel
             overwhelming. {site.firmName} helps individuals and businesses
             understand their options and work toward a practical path forward —
-            with CPA-led representation when Form 2848 is appropriate.
+            with CPA-led IRS representation when appropriate.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
@@ -152,7 +152,7 @@ export default function TaxReliefPage() {
               {[
                 "Honest assessment of your situation",
                 "No aggressive sales pressure",
-                "Form 2848 when representation is appropriate",
+                "IRS representation when appropriate",
                 "Coordination of filings and resolution work",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">

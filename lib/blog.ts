@@ -156,7 +156,7 @@ A surprising number of notices are about a 1099 that never reached the return, a
 
 Even if you disagree, missing a stated deadline can limit appeal rights or allow the IRS to assess a proposed amount. If you need more time to gather documents, note that in your response plan — and do not assume silence is safe.
 
-If the notice is about collection (balance due, intent to levy, lien), time still matters. Representation through **Form 2848** can let a CPA speak with the IRS on authorized issues so you are not fielding every call alone. See our overview of [how Form 2848 representation works](/resources/blog/how-form-2848-representation-works/).
+If the notice is about collection (balance due, intent to levy, lien), time still matters. **IRS representation** can let a CPA speak with the IRS on authorized issues so you are not fielding every call alone. See our overview of [how IRS representation works](/resources/blog/how-irs-representation-works/).
 
 ## Step 4: Choose a response path
 
@@ -178,7 +178,7 @@ Do not send original irreplaceable documents unless instructed. Keep copies of e
 
 ## How we can help
 
-NB Tax and Advisory, CPA reviews notices, helps you understand what the IRS is asking, and, when appropriate, represents you under Form 2848. Tax relief work — unfiled years, balances, installment agreements, penalty requests — stays coordinated with accurate filings.
+NB Tax and Advisory, CPA reviews notices, helps you understand what the IRS is asking, and, when appropriate, provides IRS representation. Tax relief work — unfiled years, balances, installment agreements, penalty requests — stays coordinated with accurate filings.
 
 If a letter is sitting on your desk, bring the notice (all pages) and the related year return to a conversation. [Call](/contact/) or book a consultation. Early, organized responses are usually calmer than last-week scrambles.
 `,
@@ -452,7 +452,7 @@ If an offer is rejected, appeal rights may exist. If it is accepted, you typical
 
 NB Tax and Advisory, CPA evaluates tax relief options in order: get filings current, understand transcripts and collectibility, then compare installment agreements, penalty relief, currently-not-collectible status, and — when the numbers support it — an Offer in Compromise. We do not advertise a settlement percentage.
 
-If you have a balance and want a candid options review, gather notices, recent returns, and a snapshot of assets and income, then [contact the firm](/contact/). For related reading, see [penalty abatement](/resources/blog/penalty-abatement-reasonable-cause/) and [Form 2848 representation](/resources/blog/how-form-2848-representation-works/).
+If you have a balance and want a candid options review, gather notices, recent returns, and a snapshot of assets and income, then [contact the firm](/contact/). For related reading, see [penalty abatement](/resources/blog/penalty-abatement-reasonable-cause/) and [how IRS representation works](/resources/blog/how-irs-representation-works/).
 `,
   },
   {
@@ -668,7 +668,7 @@ Interest generally keeps running on unpaid tax even when a penalty is removed. P
 
 Penalty relief is often one piece next to catching up unfiled returns, setting an installment agreement, or evaluating currently-not-collectible status. Sometimes removing a failure-to-file penalty changes whether a payment plan is realistic. Sometimes the better first move is simply to file and stop the next year's penalty from stacking.
 
-NB Tax and Advisory, CPA can review notices, explain which penalties appear, and, when the facts support it, request relief — including as part of Form 2848 representation. We will not promise that the IRS will abate an amount you saw in an advertisement.
+NB Tax and Advisory, CPA can review notices, explain which penalties appear, and, when the facts support it, request relief — including as part of IRS representation. We will not promise that the IRS will abate an amount you saw in an advertisement.
 
 If penalties are a large share of what you owe, send the notices and a brief timeline of what happened when you [contact the firm](/contact/).
 `,
@@ -722,58 +722,58 @@ If you are choosing a deferral election before year-end, bring a recent pay stub
 `,
   },
   {
-    slug: "how-form-2848-representation-works",
-    title: "How Form 2848 representation works (client-friendly)",
-    description: "A client-friendly explanation of IRS Form 2848 power of attorney — what it authorizes, and what it does not.",
+    slug: "how-irs-representation-works",
+    title: "How IRS representation works (client-friendly)",
+    description: "A client-friendly explanation of IRS representation — authorizing a CPA to speak with the IRS, what it covers, and what it does not.",
     date: "2026-08-11",
-    tags: ["Form 2848", "IRS representation", "tax relief"],
+    tags: ["IRS representation", "tax relief", "CPA"],
     content: `
-**Form 2848**, Power of Attorney and Declaration of Representative, is how you authorize a qualified professional — including a CPA — to talk to the IRS about specified tax matters. It is not a general power over your bank accounts, and it is not a guarantee of a particular outcome. It is a permission slip with edges.
+**IRS representation** is how you authorize a qualified professional — including a CPA — to talk to the IRS about specified tax matters. It is not a general power over your bank accounts, and it is not a guarantee of a particular outcome. It is a permission slip with edges.
 
-This walkthrough is for clients who have been asked to sign one and want to know what they are signing.
+This walkthrough is for clients who have been asked to authorize representation and want to know what they are signing.
 
-## What a Form 2848 typically lets us do
+## What IRS representation typically lets us do
 
 On the matters and years listed, a recognized representative can generally:
 
 - Call the IRS and authenticate on those issues
 - Request account transcripts
-- Receive copies of notices (if you check the right boxes and CAF processing has completed)
+- Receive copies of notices (if the right options are selected and IRS processing has completed)
 - Discuss proposed adjustments, collection alternatives, and missing filings
 - Submit responses and agreements you have approved
 
-The form asks for tax **type** (income, employment, etc.) and **years or periods**. A 2848 for 2023 income tax does not automatically cover 2021 employment tax. Being precise protects you.
+Authorization asks for tax **type** (income, employment, etc.) and **years or periods**. Authorization for 2023 income tax does not automatically cover 2021 employment tax. Being precise protects you.
 
 ## What it does not do
 
 - It does not let the firm withdraw money from your accounts.
 - It does not replace your obligation to file or to tell the truth on a return.
 - It does not stop every collection action the day you sign. Processing takes time, and some notices still require a separate response.
-- It does not authorize representation before other agencies unless those agencies have their own process (states usually need their own POA).
+- It does not authorize representation before other agencies unless those agencies have their own process (states usually need their own authorization).
 - It does not last forever in a useful way if years expire or you revoke it.
 
-You can revoke a power of attorney. You can also limit it. If something on the draft does not match what you want, say so before you sign.
+You can revoke IRS representation authorization. You can also limit it. If something on the draft does not match what you want, say so before you sign.
 
 ## How the process usually goes
 
 1. We agree on the scope: which years, which tax types, and why (a notice, unfiled returns, a balance, an exam).
-2. You review Form 2848. Signatures have specific rules; the IRS has been particular about electronic vs. wet signatures depending on how the form is submitted.
-3. The form is faxed or submitted to the IRS CAF (Centralized Authorization File) unit.
+2. You review the IRS representation authorization paperwork. Signatures have specific rules; the IRS has been particular about electronic vs. wet signatures depending on how materials are submitted.
+3. The authorization is submitted to the IRS Centralized Authorization File (CAF) unit.
 4. After processing, we can authenticate on the phone or through IRS online tools that accept third-party access.
 
-Until CAF updates, a well-meaning call can still hit a wall. That lag is normal, not a sign the form “failed.”
+Until CAF updates, a well-meaning call can still hit a wall. That lag is normal, not a sign authorization “failed.”
 
 ## Why representation helps in real life
 
-IRS hold times and notice language are a part-time job. A representative who has transcripts and a plan can answer a balance-due call with facts instead of fear. For tax relief — installment agreements, penalty requests, levy questions — Form 2848 is often the difference between you repeating your Social Security number to a new assistor and a coordinated response.
+IRS hold times and notice language are a part-time job. A representative who has transcripts and a plan can answer a balance-due call with facts instead of fear. For tax relief — installment agreements, penalty requests, levy questions — IRS representation is often the difference between you repeating your Social Security number to a new assistor and a coordinated response.
 
 See [what to do when you get an IRS notice](/resources/blog/what-to-do-when-you-get-an-irs-notice/) and the [tax relief](/tax-relief/) overview.
 
-## Your job after you sign
+## Your job after you authorize representation
 
 Stay reachable. Send requested documents. Do not start a second, conflicting conversation with the IRS that you forget to mention. If you receive a new notice, forward all pages — even if you think we already “have the account.”
 
-NB Tax and Advisory, CPA provides Form 2848 representation as part of tax and tax-relief engagements when it fits. We will explain the years on the form in plain language before you sign.
+NB Tax and Advisory, CPA provides IRS representation as part of tax and tax-relief engagements when it fits. We will explain the years covered in plain language before you sign.
 
 If you want the IRS to speak with a New York CPA instead of with you at work, [call the firm](/contact/) and we will talk through whether representation is the right next step.
 `,

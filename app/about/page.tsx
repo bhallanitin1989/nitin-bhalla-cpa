@@ -40,7 +40,7 @@ export default function AboutPage() {
             </p>
             <p>
               {site.principal} focuses on tax preparation, entity returns,
-              payroll and compliance, IRS representation (Form 2848), tax
+              payroll and compliance, IRS representation, tax
               planning, and bookkeeping support. Engagements are scoped to what
               you need — not a one-size package.
             </p>

@@ -89,7 +89,7 @@ export default function ServicesPage() {
                   Unfiled returns, notices, installment agreements, penalty
                   relief, levy &amp; lien situations, Offer in Compromise
                   evaluation, and currently-not-collectible exploration — with
-                  CPA-led Form 2848 representation when appropriate.
+                  CPA-led IRS representation when appropriate.
                 </p>
               </div>
             </div>

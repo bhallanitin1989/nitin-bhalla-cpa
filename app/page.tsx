@@ -61,7 +61,7 @@ const howItWorks = [
     step: "03",
     icon: ClipboardList,
     title: "We prepare, plan, or represent",
-    body: "Returns, planning, or IRS Form 2848 representation — handled virtually with organized follow-through.",
+    body: "Returns, planning, or IRS representation — handled virtually with organized follow-through.",
   },
 ];
 
@@ -117,7 +117,7 @@ const whatWeDo = [
   {
     icon: ShieldCheck,
     title: "IRS representation",
-    body: "Form 2848 power of attorney support when you need a professional voice with the IRS.",
+    body: "IRS representation support when you need a professional voice with the IRS.",
     href: "/services/irs-representation/",
   },
   {

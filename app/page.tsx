@@ -150,15 +150,15 @@ export default function HomePage() {
               "radial-gradient(circle at 18% 20%, rgba(20,184,166,0.32), transparent 42%), radial-gradient(circle at 85% 8%, rgba(184,148,74,0.18), transparent 36%)",
           }}
         />
-        <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:px-8 lg:py-24">
+        <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-20 sm:px-6 sm:py-24 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:px-8 lg:py-28">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-teal-500">
               CPA firm · New York licensed
             </p>
-            <h1 className="mt-3 max-w-2xl text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-[3.25rem]">
+            <h1 className="mt-4 max-w-2xl text-4xl font-semibold leading-[1.15] text-white sm:text-5xl lg:text-[3.15rem]">
               Clear tax &amp; IRS support from a New York CPA.
             </h1>
-            <p className="mt-5 max-w-xl text-lg leading-relaxed text-slate-100/85">
+            <p className="mt-5 max-w-xl text-lg leading-[1.7] text-slate-100/90">
               Individuals, freelancers, and small businesses get careful tax
               preparation, planning, and tax relief help — without an office
               visit.
@@ -226,14 +226,14 @@ export default function HomePage() {
       </section>
 
       {/* Welcome */}
-      <section className="border-b border-slate-100 bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
+      <section className="border-b border-cream-100 bg-cream">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-semibold uppercase tracking-wider text-teal-600">
               Welcome
             </p>
             <div className="gold-divider mx-auto mt-3" />
-            <div className="mt-6 space-y-4 text-lg leading-relaxed text-slate-600">
+            <div className="mt-6 space-y-4 text-lg leading-[1.7] text-slate-700">
               <p>
                 We are a full-service accounting firm licensed in NY. We offer a
                 broad range of services for business owners, executives, and
@@ -274,8 +274,8 @@ export default function HomePage() {
       </section>
 
       {/* How it works */}
-      <section className="border-b border-slate-100 bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+      <section className="border-b border-cream-100 bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-wider text-teal-600">
               How it works
@@ -293,7 +293,7 @@ export default function HomePage() {
             {howItWorks.map((item) => (
               <article
                 key={item.step}
-                className="relative rounded-2xl border border-slate-100 bg-slate-50 p-6"
+                className="relative rounded-3xl border border-cream-100 bg-cream p-7 shadow-sm"
               >
                 <span className="text-xs font-bold tracking-wider text-gold-500">
                   STEP {item.step}
@@ -316,8 +316,8 @@ export default function HomePage() {
       </section>
 
       {/* Who we help */}
-      <section className="bg-slate-50">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+      <section className="bg-cream-100/60">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-wider text-teal-600">
               Who we help
@@ -331,7 +331,7 @@ export default function HomePage() {
             {whoWeHelp.map((item) => (
               <article
                 key={item.title}
-                className="flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                className="flex h-full flex-col rounded-3xl border border-cream-100 bg-white p-7 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
               >
                 <div className="flex h-11 w-11 items-center justify-center rounded-full bg-teal-50 text-teal-600">
                   <item.icon className="h-5 w-5" aria-hidden />
@@ -356,7 +356,7 @@ export default function HomePage() {
       </section>
 
       {/* What We Do */}
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-wider text-teal-600">
             What we do
@@ -375,7 +375,7 @@ export default function HomePage() {
             <Link
               key={item.title}
               href={item.href}
-              className="group rounded-2xl border border-slate-100 bg-slate-50 p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-teal-500/25 hover:bg-white hover:shadow-lg"
+              className="group rounded-3xl border border-cream-100 bg-white p-7 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-teal-500/30 hover:shadow-lg"
             >
               <item.icon
                 className="h-8 w-8 text-teal-600"
@@ -410,8 +410,8 @@ export default function HomePage() {
       </section>
 
       {/* Meet the CPA */}
-      <section className="bg-slate-50">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+      <section className="bg-cream-100/60">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-center">
             <div className="rounded-3xl border border-slate-100 bg-navy-900 p-8 text-white sm:p-10">
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-teal-600/20 text-teal-500">
@@ -453,7 +453,7 @@ export default function HomePage() {
       </section>
 
       {/* Reviews */}
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div className="max-w-xl">
             <p className="text-sm font-semibold uppercase tracking-wider text-teal-600">
@@ -464,7 +464,7 @@ export default function HomePage() {
               What clients say on Thumbtack
             </h2>
           </div>
-          <div className="rounded-2xl border border-slate-100 bg-gold-50 px-6 py-4 text-center shadow-sm">
+          <div className="rounded-3xl border border-gold-400/20 bg-gold-50 px-6 py-5 text-center shadow-sm">
             <p className="font-[family-name:var(--font-display)] text-4xl font-semibold text-navy-900">
               {overallRating}
               <span className="text-2xl text-gold-500">★</span>
@@ -493,8 +493,8 @@ export default function HomePage() {
       </section>
 
       {/* From the blog */}
-      <section className="bg-slate-50">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+      <section className="bg-cream-100/60">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div className="max-w-2xl">
               <p className="text-sm font-semibold uppercase tracking-wider text-teal-600">
@@ -518,7 +518,7 @@ export default function HomePage() {
               <Link
                 key={post.slug}
                 href={`/resources/blog/${post.slug}/`}
-                className="group flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                className="group flex h-full flex-col rounded-3xl border border-cream-100 bg-white p-7 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
               >
                 <p className="text-xs font-semibold uppercase tracking-wider text-gold-500">
                   {formatPostDate(post.date)}
@@ -543,7 +543,7 @@ export default function HomePage() {
       </section>
 
       {/* Final CTA */}
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="rounded-3xl bg-navy-900 px-6 py-12 text-center text-white sm:px-12">
           <p className="text-sm font-semibold uppercase tracking-wider text-gold-400">
             Next step

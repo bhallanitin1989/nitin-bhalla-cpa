@@ -14,7 +14,7 @@ const exploreResources = footerNavLinks.filter((link) =>
 
 export default function Footer() {
   return (
-    <footer className="mt-auto border-t border-slate-100 bg-navy-950 text-slate-100">
+    <footer className="mt-auto border-t border-navy-800 bg-navy-950 text-slate-100">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-1">
           <p className="font-[family-name:var(--font-display)] text-xl font-semibold text-white">

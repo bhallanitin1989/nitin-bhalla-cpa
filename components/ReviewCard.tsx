@@ -28,7 +28,7 @@ export default function ReviewCard({
   compact?: boolean;
 }) {
   return (
-    <article className="flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:shadow-md">
+    <article className="flex h-full flex-col rounded-3xl border border-cream-100 bg-white p-6 shadow-sm transition hover:shadow-md">
       <StarRating rating={review.rating} />
       <blockquote
         className={`mt-4 flex-1 text-sm leading-relaxed text-slate-600 ${

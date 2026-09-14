@@ -40,7 +40,7 @@ export const site = {
   ],
   disclaimer:
     "This website provides general information and is not tax advice. NB Tax and Advisory, CPA is a d/b/a of Nitin Bhalla CPA PC. Please contact the firm to discuss your specific situation.",
-  logoSrc: "/logo-nb-tax.png",
+  logoSrc: "/logo-nb-tax.svg",
   logoAlt: "NB Tax and Advisory, CPA",
 } as const;
 

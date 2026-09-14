@@ -9,8 +9,11 @@
   --slate-500: #64748b;
   --slate-100: #f1f5f9;
   --slate-50: #f8fafc;
+  --cream: #faf7f2;
+  --cream-100: #f3eee6;
   --teal-600: #0d9488;
   --teal-500: #14b8a6;
+  --teal-400: #2dd4bf;
   --teal-50: #f0fdfa;
   --gold-500: #b8944a;
   --gold-400: #c9a85c;
@@ -27,8 +30,11 @@
   --color-slate-500: var(--slate-500);
   --color-slate-100: var(--slate-100);
   --color-slate-50: var(--slate-50);
+  --color-cream: var(--cream);
+  --color-cream-100: var(--cream-100);
   --color-teal-600: var(--teal-600);
   --color-teal-500: var(--teal-500);
+  --color-teal-400: var(--teal-400);
   --color-teal-50: var(--teal-50);
   --color-gold-500: var(--gold-500);
   --color-gold-400: var(--gold-400);
@@ -37,23 +43,30 @@
   --font-display: var(--font-source-serif);
 }
 
-html {
-  scroll-behavior: smooth;
-}
+/* Base styles in @layer so Tailwind utilities (e.g. text-white) win */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  background: var(--white);
-  color: var(--slate-700);
-  font-family: var(--font-sans), system-ui, sans-serif;
-}
+  body {
+    background: var(--cream);
+    color: var(--slate-700);
+    font-family: var(--font-sans), system-ui, sans-serif;
+    font-size: 1.0625rem; /* 17px */
+    line-height: 1.7;
+  }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--font-display), Georgia, serif;
-  color: var(--navy-900);
-  letter-spacing: -0.02em;
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display), Georgia, serif;
+    color: var(--navy-900);
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+    font-weight: 600;
+  }
 }
 
 :focus-visible {
@@ -77,22 +90,24 @@ h4 {
   top: 1rem;
 }
 
-/* Shared button patterns */
+/* Shared button patterns — friendlier, slightly larger */
 .btn-primary {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   border-radius: 9999px;
   background: var(--teal-600);
-  padding: 0.75rem 1.25rem;
-  font-size: 0.875rem;
+  padding: 0.85rem 1.4rem;
+  font-size: 0.9375rem;
   font-weight: 600;
   color: white;
-  transition: background-color 0.15s ease;
+  box-shadow: 0 1px 2px rgba(13, 148, 136, 0.2);
+  transition: background-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
 }
 
 .btn-primary:hover {
   background: var(--teal-500);
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.25);
 }
 
 .btn-secondary {
@@ -100,19 +115,21 @@ h4 {
   align-items: center;
   gap: 0.5rem;
   border-radius: 9999px;
-  border: 1px solid rgba(15, 27, 45, 0.18);
-  background: transparent;
-  padding: 0.75rem 1.25rem;
-  font-size: 0.875rem;
+  border: 1px solid rgba(15, 27, 45, 0.14);
+  background: var(--white);
+  padding: 0.85rem 1.4rem;
+  font-size: 0.9375rem;
   font-weight: 600;
   color: var(--navy-900);
-  transition: background-color 0.15s ease, border-color 0.15s ease;
+  box-shadow: 0 1px 2px rgba(15, 27, 45, 0.04);
+  transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .btn-secondary:hover {
   border-color: var(--teal-600);
   background: var(--teal-50);
   color: var(--teal-600);
+  box-shadow: 0 2px 8px rgba(13, 148, 136, 0.12);
 }
 
 .btn-secondary-on-dark {
@@ -120,22 +137,23 @@ h4 {
   align-items: center;
   gap: 0.5rem;
   border-radius: 9999px;
-  border: 1px solid rgba(255, 255, 255, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.32);
   background: transparent;
-  padding: 0.75rem 1.25rem;
-  font-size: 0.875rem;
+  padding: 0.85rem 1.4rem;
+  font-size: 0.9375rem;
   font-weight: 600;
   color: white;
-  transition: background-color 0.15s ease;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 
 .btn-secondary-on-dark:hover {
   background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .gold-divider {
-  height: 2px;
-  width: 3rem;
+  height: 3px;
+  width: 2.75rem;
   border-radius: 9999px;
-  background: linear-gradient(90deg, var(--gold-500), var(--gold-400));
+  background: linear-gradient(90deg, var(--gold-500), var(--gold-400), var(--teal-400));
 }

@@ -141,7 +141,7 @@ export default function Header() {
   }
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-cream-100/80 bg-cream/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-3.5 sm:px-6 lg:px-8 xl:px-10">
         <Link
           href="/"
@@ -151,9 +151,9 @@ export default function Header() {
           <Image
             src={site.logoSrc}
             alt={site.logoAlt}
-            width={240}
-            height={64}
-            className="h-16 w-auto object-contain sm:h-[4.5rem]"
+            width={437}
+            height={150}
+            className="h-24 w-auto object-contain sm:h-28"
             priority
           />
         </Link>
@@ -223,7 +223,7 @@ export default function Header() {
       {open && (
         <nav
           id="mobile-nav"
-          className="border-t border-slate-100 bg-white px-4 py-3 xl:hidden"
+          className="border-t border-cream-100 bg-cream px-4 py-3 xl:hidden"
           aria-label="Mobile"
         >
           <ul className="flex flex-col gap-1">

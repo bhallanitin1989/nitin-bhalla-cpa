@@ -23,8 +23,8 @@ export default function TopicDetail({
 }: TopicDetailProps) {
   return (
     <>
-      <section className="border-b border-slate-100 bg-slate-50">
-        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
+      <section className="border-b border-cream-100 bg-cream">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-wider text-teal-600">
             {eyebrow}
           </p>
@@ -43,7 +43,7 @@ export default function TopicDetail({
             ))}
           </div>
 
-          <aside className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
+          <aside className="rounded-3xl border border-cream-100 bg-white p-7 shadow-sm">
             <h2 className="text-lg font-semibold text-navy-900">
               What this can include
             </h2>
@@ -64,7 +64,7 @@ export default function TopicDetail({
           </aside>
         </div>
 
-        <div className="mt-12 rounded-2xl bg-navy-900 p-8 text-white sm:flex sm:items-center sm:justify-between sm:gap-8">
+        <div className="mt-12 rounded-3xl bg-navy-900 p-8 text-white sm:flex sm:items-center sm:justify-between sm:gap-8">
           <div>
             <h2 className="text-2xl font-semibold text-white">
               Ready to discuss your situation?

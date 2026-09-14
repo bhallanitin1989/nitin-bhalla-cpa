@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sourceSans.variable} ${sourceSerif.variable} flex min-h-screen flex-col antialiased`}
+        className={`${sourceSans.variable} ${sourceSerif.variable} flex min-h-screen flex-col bg-cream antialiased`}
       >
         <a href="#main" className="skip-link">
           Skip to main content

@@ -280,73 +280,247 @@ export default function InternationalTaxPage() {
         </div>
       </section>
 
-      {/* Penalties */}
+      {/* International tax penalties */}
       <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-wider text-teal-600">
-              Penalties &amp; why filing matters
+        <div className="max-w-3xl">
+          <p className="text-sm font-semibold uppercase tracking-wider text-teal-600">
+            International tax penalties
+          </p>
+          <div className="gold-divider mt-3" />
+          <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
+            Among the harshest penalties in the tax code — and they stack.
+          </h2>
+          <div className="mt-5 space-y-4 text-base leading-relaxed text-slate-600">
+            <p>
+              International information-return penalties are widely regarded as
+              among the most severe in U.S. tax practice. They often apply{" "}
+              <strong className="font-semibold text-navy-900">
+                per form, per year
+              </strong>
+              , can continue after IRS notice, and may accumulate across
+              entities and tax years. In many cases, the statute of limitations
+              on assessment may not begin until the required international
+              returns are filed.
             </p>
-            <div className="gold-divider mt-3" />
-            <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
-              Ownership — not income — often drives the duty to file.
-            </h2>
-            <div className="mt-5 space-y-4 text-base leading-relaxed text-slate-600">
-              <p>
-                Many international information returns are required because of{" "}
-                <strong className="font-semibold text-navy-900">
-                  ownership or account balances
-                </strong>
-                , not because the foreign entity or account generated taxable
-                profit. A year with zero income can still require a complete
-                filing.
-              </p>
-              <p>
-                Penalties for late or missing international forms can be severe
-                and may apply{" "}
-                <strong className="font-semibold text-navy-900">
-                  per form, per year
-                </strong>
-                . In some cases, continuation penalties can grow after IRS
-                notice, and assessment periods may stay open until required
-                information returns are filed. Exact amounts and rules change —
-                always confirm current IRS and FinCEN guidance.
-              </p>
-              <p>
-                If you believe prior years were missed, coming forward before the
-                IRS initiates contact is often discussed as a constructive step.
-                Options people commonly learn about include{" "}
-                <em>streamlined filing procedures</em>,{" "}
-                <em>delinquent information-return procedures</em>, and{" "}
-                <em>reasonable cause</em> requests. These are educational
-                concepts only — eligibility, timing, and outcomes are never
-                guaranteed.
-              </p>
-            </div>
+            <p>
+              Equally important: many of these returns are driven by{" "}
+              <strong className="font-semibold text-navy-900">
+                ownership or account balances — not by taxable income
+              </strong>
+              . A foreign company or account with zero profit can still create a
+              filing duty. Missing that filing can leave exposure open for years
+              you thought were quiet.
+            </p>
           </div>
-          <aside className="rounded-2xl border border-amber-200 bg-amber-50 p-6 shadow-sm">
-            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-amber-100 text-amber-700">
-              <ShieldAlert className="h-5 w-5" aria-hidden />
-            </div>
-            <h3 className="mt-4 text-lg font-semibold text-navy-900">
-              Educational note — not a quote of current penalties
+        </div>
+
+        {/* Summary table */}
+        <div className="mt-10 overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm">
+          <div className="border-b border-slate-100 bg-slate-50 px-5 py-4 sm:px-6">
+            <h3 className="text-lg font-semibold text-navy-900">
+              Illustrative penalty summary
             </h3>
-            <ul className="mt-4 space-y-3 text-sm text-slate-700">
+            <p className="mt-1 text-sm text-slate-600">
+              Approximate figures commonly cited in educational materials.
+              Amounts — especially FBAR — are subject to inflation adjustment
+              and legislative change. Confirm current IRS and FinCEN guidance
+              before relying on any number.
+            </p>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="min-w-full text-left text-sm">
+              <thead>
+                <tr className="border-b border-slate-100 bg-navy-900 text-white">
+                  <th className="px-5 py-3 font-semibold sm:px-6" scope="col">
+                    Form
+                  </th>
+                  <th className="px-5 py-3 font-semibold sm:px-6" scope="col">
+                    Initial penalty
+                  </th>
+                  <th className="px-5 py-3 font-semibold sm:px-6" scope="col">
+                    Continuation penalty
+                  </th>
+                  <th className="px-5 py-3 font-semibold sm:px-6" scope="col">
+                    Maximum
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100 text-slate-700">
+                <tr className="bg-white">
+                  <td className="px-5 py-3.5 font-medium text-navy-900 sm:px-6">
+                    Form 5471
+                  </td>
+                  <td className="px-5 py-3.5 sm:px-6">$10,000</td>
+                  <td className="px-5 py-3.5 sm:px-6">
+                    $10,000 per 30 days after notice
+                  </td>
+                  <td className="px-5 py-3.5 sm:px-6">
+                    Often cited ~$60,000
+                  </td>
+                </tr>
+                <tr className="bg-slate-50/70">
+                  <td className="px-5 py-3.5 font-medium text-navy-900 sm:px-6">
+                    Form 5472
+                  </td>
+                  <td className="px-5 py-3.5 sm:px-6">$25,000</td>
+                  <td className="px-5 py-3.5 sm:px-6">
+                    $25,000 per 30 days (after notice period)
+                  </td>
+                  <td className="px-5 py-3.5 sm:px-6">
+                    No cap commonly cited
+                  </td>
+                </tr>
+                <tr className="bg-white">
+                  <td className="px-5 py-3.5 font-medium text-navy-900 sm:px-6">
+                    Form 8865
+                  </td>
+                  <td className="px-5 py-3.5 sm:px-6">$10,000</td>
+                  <td className="px-5 py-3.5 sm:px-6">
+                    $10,000 per 30 days after notice
+                  </td>
+                  <td className="px-5 py-3.5 sm:px-6">
+                    Often cited ~$60,000
+                  </td>
+                </tr>
+                <tr className="bg-slate-50/70">
+                  <td className="px-5 py-3.5 font-medium text-navy-900 sm:px-6">
+                    Form 8938
+                  </td>
+                  <td className="px-5 py-3.5 sm:px-6">$10,000</td>
+                  <td className="px-5 py-3.5 sm:px-6">
+                    Continuation up to commonly cited ~$50,000 additional
+                  </td>
+                  <td className="px-5 py-3.5 sm:px-6">
+                    Educational max often discussed near ~$60,000 total —
+                    confirm current rules
+                  </td>
+                </tr>
+                <tr className="bg-white">
+                  <td className="px-5 py-3.5 font-medium text-navy-900 sm:px-6">
+                    FBAR (non-willful)
+                  </td>
+                  <td className="px-5 py-3.5 sm:px-6" colSpan={2}>
+                    Illustrative range often cited around ~$16,000+ per
+                    violation (inflation-adjusted; confirm FinCEN)
+                  </td>
+                  <td className="px-5 py-3.5 sm:px-6">Varies by facts</td>
+                </tr>
+                <tr className="bg-slate-50/70">
+                  <td className="px-5 py-3.5 font-medium text-navy-900 sm:px-6">
+                    FBAR (willful)
+                  </td>
+                  <td className="px-5 py-3.5 sm:px-6" colSpan={2}>
+                    Greater of an inflation-adjusted fixed amount (commonly
+                    discussed in the ~$100,000+ range) or 50% of the account
+                    balance — illustrative only; confirm FinCEN
+                  </td>
+                  <td className="px-5 py-3.5 sm:px-6">
+                    Greater of fixed amount or 50% of balance
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="border-t border-slate-100 px-5 py-3 text-xs leading-relaxed text-slate-500 sm:px-6">
+            Figures above are educational approximations for discussion — not a
+            fee schedule, not a guarantee of what the IRS or FinCEN will assess,
+            and not legal advice. FBAR civil penalties are adjusted for inflation;
+            always verify the current FinCEN and IRS published amounts for the
+            year at issue.
+          </p>
+        </div>
+
+        {/* Relief + SOL */}
+        <div className="mt-8 grid gap-6 lg:grid-cols-2">
+          <article className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm sm:p-8">
+            <h3 className="text-lg font-semibold text-navy-900">
+              Penalty relief options people commonly ask about
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-slate-600">
+              Coming into compliance before the IRS initiates contact is often
+              discussed as a constructive step. Paths that appear in educational
+              guidance include the following — eligibility and results are never
+              guaranteed:
+            </p>
+            <ul className="mt-5 space-y-3.5 text-sm text-slate-700">
               {[
-                "International forms often stack across entities and years",
-                "FBAR and FATCA are separate regimes with different agencies",
-                "Tax law in this area changes — confirm current rules",
-                "No page can determine your filing set without your facts",
+                {
+                  title: "Reasonable cause",
+                  body: "Penalties may be considered for abatement when the failure was due to reasonable cause and not willful neglect — fact-specific and not assured.",
+                },
+                {
+                  title: "Streamlined Filing Compliance Procedures",
+                  body: "A voluntary path discussed for certain non-willful taxpayers who missed foreign-account or international reporting — terms differ for foreign vs. domestic residents.",
+                },
+                {
+                  title: "Delinquent Information Return Submission Procedures",
+                  body: "A path sometimes used to file late international information returns when the IRS has not contacted you and there is no unreported income — confirm current IRS criteria.",
+                },
+                {
+                  title: "First-time penalty abatement",
+                  body: "May apply in limited situations for taxpayers with a clean compliance history — not available for every international penalty type.",
+                },
               ].map((item) => (
-                <li key={item} className="flex items-start gap-3">
+                <li key={item.title} className="flex items-start gap-3">
                   <span
-                    className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500"
+                    className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600"
                     aria-hidden
                   />
-                  {item}
+                  <span>
+                    <strong className="font-semibold text-navy-900">
+                      {item.title}:
+                    </strong>{" "}
+                    {item.body}
+                  </span>
                 </li>
               ))}
             </ul>
+          </article>
+
+          <aside className="flex flex-col gap-6">
+            <div className="rounded-2xl border border-amber-200 bg-amber-50 p-6 shadow-sm">
+              <div className="flex h-11 w-11 items-center justify-center rounded-full bg-amber-100 text-amber-700">
+                <ShieldAlert className="h-5 w-5" aria-hidden />
+              </div>
+              <h3 className="mt-4 text-lg font-semibold text-navy-900">
+                Unlimited statute of limitations (educational)
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-slate-700">
+                Under the concept reflected in{" "}
+                <strong className="font-semibold text-navy-900">
+                  IRC § 6501(c)(8)
+                </strong>
+                , the period for assessing tax attributable to certain
+                international information returns may not begin until those
+                returns are filed. If required forms were never submitted, the
+                IRS may be able to assess related tax and penalties for an
+                indefinite period. This is one of the most serious practical
+                consequences of prolonged non-filing — and a core reason timely
+                compliance matters even in low- or zero-income years.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-6 shadow-sm">
+              <h3 className="text-base font-semibold text-navy-900">
+                Keep in mind
+              </h3>
+              <ul className="mt-4 space-y-3 text-sm text-slate-700">
+                {[
+                  "Forms can stack across entities, accounts, and years",
+                  "FBAR (FinCEN) and Form 8938 (IRS) are separate regimes",
+                  "Ownership — not income — often drives the duty to file",
+                  "Numbers on this page are illustrative and change — confirm current rules",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span
+                      className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500"
+                      aria-hidden
+                    />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </aside>
         </div>
       </section>

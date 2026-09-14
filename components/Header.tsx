@@ -53,7 +53,7 @@ export default function Header() {
   }, [pathname, closeAll]);
 
   const linkClass = (href: string, extra = "") =>
-    `rounded-md px-3 py-2 text-sm font-medium transition-colors ${
+    `rounded-md px-2.5 py-2 text-sm font-medium transition-colors ${
       isActive(href)
         ? "bg-teal-50 text-teal-600"
         : "text-slate-600 hover:bg-slate-50 hover:text-navy-900"
@@ -80,7 +80,7 @@ export default function Header() {
       >
         <button
           type="button"
-          className={`inline-flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium transition-colors ${
+          className={`inline-flex items-center gap-1 rounded-md px-2.5 py-2 text-sm font-medium transition-colors ${
             active || expanded
               ? "bg-teal-50 text-teal-600"
               : "text-slate-600 hover:bg-slate-50 hover:text-navy-900"
@@ -142,7 +142,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-3.5 sm:px-6 lg:px-8 xl:px-10">
         <Link
           href="/"
           className="group flex min-w-0 items-center"
@@ -160,41 +160,43 @@ export default function Header() {
 
         <nav
           ref={navRef}
-          className="hidden items-center gap-0.5 xl:flex"
+          className="hidden items-center gap-1 xl:flex"
           aria-label="Primary"
         >
           {navLinks.map((link) => (
             <DesktopItem key={link.href} item={link} />
           ))}
-          {site.calendlyUrl ? (
+          <div className="ml-4 flex items-center gap-2.5 border-l border-slate-200 pl-4">
+            {site.calendlyUrl ? (
+              <a
+                href={site.calendlyUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-full bg-teal-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-teal-500"
+              >
+                <Calendar className="h-4 w-4" aria-hidden />
+                Book
+              </a>
+            ) : null}
             <a
-              href={site.calendlyUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-1 inline-flex items-center gap-1.5 rounded-full bg-teal-600 px-3.5 py-2 text-sm font-semibold text-white transition hover:bg-teal-500"
+              href={site.phoneHref}
+              className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-slate-200 px-4 py-2.5 text-sm font-semibold text-navy-900 transition hover:border-teal-600 hover:bg-teal-50 hover:text-teal-700"
             >
-              <Calendar className="h-4 w-4" aria-hidden />
-              Book
+              <Phone className="h-4 w-4 shrink-0" aria-hidden />
+              {site.phone}
             </a>
-          ) : null}
-          <a
-            href={site.phoneHref}
-            className="ml-1 inline-flex items-center gap-2 rounded-full border border-slate-200 px-3.5 py-2 text-sm font-semibold text-navy-900 transition hover:border-teal-600 hover:bg-teal-50 hover:text-teal-700"
-          >
-            <Phone className="h-4 w-4" aria-hidden />
-            {site.phone}
-          </a>
-          {site.clientPortalUrl ? (
-            <a
-              href={site.clientPortalUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-1 inline-flex items-center gap-1.5 rounded-full border border-slate-200 px-3.5 py-2 text-sm font-semibold text-navy-900 transition hover:bg-slate-50"
-            >
-              Portal
-              <ExternalLink className="h-3.5 w-3.5" aria-hidden />
-            </a>
-          ) : null}
+            {site.clientPortalUrl ? (
+              <a
+                href={site.clientPortalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border border-slate-200 px-4 py-2.5 text-sm font-semibold text-navy-900 transition hover:bg-slate-50"
+              >
+                Portal
+                <ExternalLink className="h-3.5 w-3.5" aria-hidden />
+              </a>
+            ) : null}
+          </div>
         </nav>
 
         <div className="flex items-center gap-2 xl:hidden">

@@ -6,6 +6,7 @@ import {
   Calculator,
   ClipboardList,
   FileSpreadsheet,
+  Globe2,
   Phone,
   Scale,
   Shield,
@@ -16,12 +17,13 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Tax preparation, planning, payroll, IRS representation, tax relief, and bookkeeping support from NB Tax and Advisory, CPA.",
+    "Tax preparation, international tax, planning, payroll, IRS representation, tax relief, and bookkeeping support from NB Tax and Advisory, CPA.",
 };
 
 const icons = {
   "tax-preparation": FileSpreadsheet,
   "s-corp-llc": Calculator,
+  "international-tax": Globe2,
   "payroll-compliance": ClipboardList,
   "irs-representation": Scale,
   "tax-planning": BookOpen,

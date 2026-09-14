@@ -8,6 +8,7 @@ import {
   ClipboardList,
   ExternalLink,
   FileText,
+  Globe2,
   LifeBuoy,
   MonitorSmartphone,
   Phone,
@@ -101,6 +102,12 @@ const whatWeDo = [
     title: "S-corp & LLC returns",
     body: "Entity filings coordinated with owner returns so important details stay aligned.",
     href: "/services/s-corp-llc/",
+  },
+  {
+    icon: Globe2,
+    title: "International tax",
+    body: "Outbound and inbound reporting — Forms 5471, 5472, 8865, FBAR, FATCA, and expat support.",
+    href: "/services/international-tax/",
   },
   {
     icon: Calculator,
@@ -359,7 +366,7 @@ export default function HomePage() {
             Filings, planning, and IRS matters — in one CPA practice.
           </h2>
           <p className="mt-3 text-slate-600">
-            Six focused service paths. Each links to a clear overview so you
+            Focused service paths. Each links to a clear overview so you
             know what to expect before you book.
           </p>
         </div>

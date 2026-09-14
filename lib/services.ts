@@ -142,6 +142,29 @@ export const services: ServiceItem[] = [
     metaDescription:
       "Bookkeeping support from NB Tax and Advisory, CPA — cleanup, categorization, and reports that support clean filings.",
   },
+  {
+    slug: "international-tax",
+    title: "International tax services",
+    navLabel: "International tax services",
+    summary:
+      "Outbound and inbound international information reporting — Forms 5471, 5472, 8865, 1040-NR, FBAR, and FATCA — plus high-level expat support and penalty-relief coordination.",
+    heroEyebrow: "International tax",
+    body: [
+      "Cross-border ownership and foreign accounts create information-reporting duties that are easy to miss and costly when overlooked. NB Tax and Advisory, CPA helps U.S. persons with foreign interests and foreign owners of U.S. entities understand which forms may apply and prepare filings with care.",
+      "Support may include outbound forms such as 5471, 8865, and 8858; inbound forms such as 5472 and 1040-NR; FBAR (FinCEN 114) and Form 8938 (FATCA); and high-level guidance for Americans abroad on exclusions and foreign tax credits. When prior years were missed, we can also coordinate educational discussion of penalty-relief pathways with IRS representation or tax relief work when appropriate.",
+      "International tax rules change. This page is general information only — not tax advice — and does not guarantee outcomes. Confirm current IRS and FinCEN requirements for your facts, and contact the firm to discuss your situation.",
+    ],
+    points: [
+      "Outbound reporting for U.S. persons with foreign entities",
+      "Inbound reporting for foreign-owned U.S. entities",
+      "Key forms: 5471, 5472, 8865, 8858, 1040-NR, 3520 (as applicable)",
+      "FBAR (FinCEN 114) and Form 8938 (FATCA) support",
+      "Expat basics: FEIE and foreign tax credit awareness",
+      "Penalty-relief coordination when filings were missed",
+    ],
+    metaDescription:
+      "International tax services from NB Tax and Advisory, CPA — Forms 5471, 5472, 8865, FBAR, FATCA, expat support, and penalty-relief coordination.",
+  },
 ];
 
 export function getService(slug: string): ServiceItem | undefined {

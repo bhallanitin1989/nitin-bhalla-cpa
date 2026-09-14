@@ -31,6 +31,7 @@ export const site = {
   focus: [
     "Individual & business tax preparation",
     "S-corp and LLC returns",
+    "International tax services",
     "Payroll & compliance",
     "IRS representation",
     "Tax relief & resolution support",

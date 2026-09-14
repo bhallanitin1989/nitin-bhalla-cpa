@@ -6,7 +6,10 @@ import { getService, getServiceSlugs } from "@/lib/services";
 type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
-  return getServiceSlugs().map((slug) => ({ slug }));
+  // Dedicated static routes (e.g. international-tax) win over [slug].
+  return getServiceSlugs()
+    .filter((slug) => slug !== "international-tax")
+    .map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

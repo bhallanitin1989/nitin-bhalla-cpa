@@ -24,7 +24,7 @@ export default function AboutPage() {
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-slate-600">
             {site.brandName} is led by {site.principal}, a licensed Certified
-            Public Accountant in New York — serving clients virtually nationwide.
+            Public Accountant in New York — serving business owners, executives, and independent professionals.
           </p>
         </div>
       </section>
@@ -88,7 +88,7 @@ export default function AboutPage() {
                     {site.legalName}
                   </li>
                   <li>
-                    <strong className="text-navy-900">Practice:</strong> Virtual
+                    <strong className="text-navy-900">Practice:</strong>{" "}
                     CPA firm · New York licensed
                   </li>
                 </ul>

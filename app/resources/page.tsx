@@ -22,7 +22,7 @@ const cards = [
     href: "/resources/blog/",
     icon: BookOpen,
     title: "Blog",
-    body: "Original articles on estimated taxes, S-corps, IRS notices, planning, and representation — written for a virtual New York CPA practice.",
+    body: "Original articles on estimated taxes, S-corps, IRS notices, planning, and representation — written for a New York CPA practice.",
   },
   {
     href: "/resources/tax-calendar/",

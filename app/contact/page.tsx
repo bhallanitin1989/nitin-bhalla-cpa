@@ -11,7 +11,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact NB Tax and Advisory, CPA — virtual New York CPA firm. Book a consultation or call; engagements are handled remotely.",
+    "Contact NB Tax and Advisory, CPA — a New York licensed CPA firm. Book a consultation or call today.",
 };
 
 export default function ContactPage() {
@@ -27,7 +27,7 @@ export default function ContactPage() {
             Let&apos;s talk — wherever you are.
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-slate-600">
-            {site.brandName} is a virtual New York CPA practice. Book a
+            {site.brandName} is a New York licensed CPA firm. Book a
             consultation or call when you&apos;re ready — no office visit, no
             street address to find. Just clear next steps.
           </p>
@@ -80,7 +80,7 @@ export default function ContactPage() {
                     aria-hidden
                   />
                   <div>
-                    <p className="font-medium text-navy-900">Virtual practice</p>
+                    <p className="font-medium text-navy-900">CPA firm</p>
                     <p className="mt-1 leading-relaxed">
                       Consultations and ongoing work happen by phone, video, and
                       secure portal — nationwide, New York licensed.

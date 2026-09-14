@@ -15,7 +15,7 @@ export const site = {
     zip: "10001",
     full: "224 W 35th St Ste 500 #823, New York, NY 10001",
   },
-  /** Virtual CPA firm — street address is not shown in the UI. */
+  /** Street address is not shown in the UI. */
   virtualFirm: true,
   showAddress: false,
   phone: "(646) 992-4277",
@@ -27,7 +27,7 @@ export const site = {
   /** Set your client portal URL to show the portal button in the Header only. */
   clientPortalUrl: "https://www.blueinktaxes.com/login" as string | null,
   tagline:
-    "Clear tax preparation, planning, and IRS support from a virtual New York CPA — nationwide and remote-friendly.",
+    "Clear tax preparation, planning, and IRS support from a New York CPA firm.",
   focus: [
     "Individual & business tax preparation",
     "S-corp and LLC returns",

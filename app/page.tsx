@@ -61,7 +61,7 @@ const howItWorks = [
     step: "03",
     icon: ClipboardList,
     title: "We prepare, plan, or represent",
-    body: "Returns, planning, or IRS representation — handled virtually with organized follow-through.",
+    body: "Returns, planning, or IRS representation — handled with organized follow-through.",
   },
 ];
 
@@ -146,10 +146,10 @@ export default function HomePage() {
         <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:px-8 lg:py-24">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-teal-500">
-              Virtual CPA firm · New York licensed
+              CPA firm · New York licensed
             </p>
             <h1 className="mt-3 max-w-2xl text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-[3.25rem]">
-              Clear tax &amp; IRS support from a New York CPA — virtually.
+              Clear tax &amp; IRS support from a New York CPA.
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-slate-100/85">
               Individuals, freelancers, and small businesses get careful tax
@@ -180,7 +180,7 @@ export default function HomePage() {
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-xs font-semibold text-white/95">
                 <MonitorSmartphone className="h-3.5 w-3.5 text-teal-500" aria-hidden />
-                Virtual
+                Full-service
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-xs font-semibold text-white/95">
                 <ShieldCheck className="h-3.5 w-3.5 text-teal-500" aria-hidden />
@@ -278,11 +278,11 @@ export default function HomePage() {
             </p>
             <div className="gold-divider mt-3" />
             <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
-              A simple virtual path from first call to finished work.
+              A simple path from first call to finished work.
             </h2>
             <p className="mt-3 text-slate-600">
-              Built for remote clients nationwide who want New York CPA
-              standards without the commute.
+              Built for clients who want New York CPA standards with
+              professionalism, responsiveness, and quality.
             </p>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -359,7 +359,7 @@ export default function HomePage() {
           </p>
           <div className="gold-divider mt-3" />
           <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
-            Filings, planning, and IRS matters — in one virtual practice.
+            Filings, planning, and IRS matters — in one CPA practice.
           </h2>
           <p className="mt-3 text-slate-600">
             Six focused service paths. Each links to a clear overview so you
@@ -433,7 +433,7 @@ export default function HomePage() {
               </h2>
               <p className="mt-4 text-base leading-relaxed text-slate-600">
                 You work directly with {site.principal}. Engagements are
-                handled personally — virtual workflows, clear checklists, and
+                handled personally — clear checklists, and
                 practical next steps from annual returns to IRS notices.
               </p>
               <Link
@@ -549,7 +549,7 @@ export default function HomePage() {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-slate-100/80">
             Book a consultation or call {site.brandName}. We&apos;ll listen,
-            outline options, and handle the work virtually — with the care of a
+            outline options, and handle the work with the care of a
             New York CPA practice.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">

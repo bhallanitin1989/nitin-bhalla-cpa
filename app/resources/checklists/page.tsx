@@ -234,7 +234,7 @@ export default function ChecklistsPage() {
             </h2>
             <p className="mt-2 max-w-xl text-sm text-slate-100/80">
               Call first so we can confirm what is useful. Engagements are
-              handled virtually — secure upload after we are working together.
+              secure upload after we are working together.
             </p>
           </div>
           <div className="mt-6 flex flex-wrap gap-3 sm:mt-0 sm:shrink-0">

@@ -244,7 +244,7 @@ Include every page of any notice received during the year, plus proof of payment
 
 A shared folder or client portal with clear file names (\`2025-W2-Acme.pdf\`) beats a 40-message text thread. One short cover note — “new freelance client in March, refinanced in July, still waiting on K-1” — saves days of back-and-forth.
 
-NB Tax and Advisory, CPA is a virtual firm. Secure upload and a phone or video conversation are the normal workflow. If you want a printable version of intake lists, use the [client document checklists](/resources/checklists/) and then [reach out](/contact/) when you are ready to engage.
+NB Tax and Advisory, CPA. Secure upload and a phone or video conversation are available when useful. If you want a printable version of intake lists, use the [client document checklists](/resources/checklists/) and then [reach out](/contact/) when you are ready to engage.
 `,
   },
   {
@@ -576,7 +576,7 @@ Three sentences help a preparer more than another folder of screenshots: “Star
 
 When it is time to file, export a P&L, balance sheet if you have one, payroll reports, 1099s issued, and the income forms you received. Name files by year and type. The [preseason document list](/resources/blog/documents-to-gather-before-tax-season/) and [checklists](/resources/checklists/) spell this out.
 
-NB Tax and Advisory, CPA offers bookkeeping support alongside tax preparation because clean books are how accurate returns happen. If your current system is a shared inbox and a hope, [call](/contact/) and we can talk about a right-sized setup — virtual and practical, not theatrical.
+NB Tax and Advisory, CPA offers bookkeeping support alongside tax preparation because clean books are how accurate returns happen. If your current system is a shared inbox and a hope, [call](/contact/) and we can talk about a right-sized setup — practical and right-sized, not theatrical.
 `,
   },
   {
@@ -622,7 +622,7 @@ If you hire or stay employed across state lines, **payroll withholding registrat
 
 When your work location, employer office policy, or home state changes, write down the effective date and what changed. Adjust W-4 state withholding if needed. Do not wait until a 1099 or W-2 arrives that looks “wrong” because nobody told payroll you moved.
 
-NB Tax and Advisory, CPA is a **virtual New York–licensed** firm that works with clients nationwide. Multi-state facts come up often for remote employees and mobile freelancers. We will not invent a residency position to dodge a state; we will help you file consistent, supportable returns.
+NB Tax and Advisory, CPA is a **New York–licensed** CPA firm. Multi-state facts come up often for remote employees and mobile freelancers. We will not invent a residency position to dodge a state; we will help you file consistent, supportable returns.
 
 If you split the year between states or your employer is in one state and you work in another, bring both addresses, a day-count if you have one, and last year's returns to a [conversation](/contact/).
 `,

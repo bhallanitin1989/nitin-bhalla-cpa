@@ -27,7 +27,7 @@ export default function Footer() {
             {site.legalName} d/b/a {site.brandName}
           </p>
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-slate-500">
-            Virtual New York CPA support — nationwide and remote-friendly.
+            New York CPA support for business owners, executives, and independent professionals.
           </p>
         </div>
 
@@ -72,7 +72,7 @@ export default function Footer() {
             Contact
           </h2>
           <ul className="mt-4 space-y-3 text-sm text-slate-100/80">
-            <li>Virtual CPA firm · New York licensed</li>
+            <li>CPA firm · New York licensed</li>
             <li>
               <a
                 href={site.phoneHref}

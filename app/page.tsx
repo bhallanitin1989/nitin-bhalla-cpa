@@ -218,6 +218,57 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Welcome */}
+      <section className="border-b border-slate-100 bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-wider text-teal-600">
+              Welcome
+            </p>
+            <div className="gold-divider mx-auto mt-3" />
+            <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
+              A full-service New York accounting firm.
+            </h2>
+            <div className="mt-6 space-y-4 text-lg leading-relaxed text-slate-600">
+              <p>
+                We are a full-service accounting firm licensed in NY. We offer a
+                broad range of services for business owners, executives, and
+                independent professionals. We are affordable, experienced, and
+                friendly.
+              </p>
+              <p>
+                We provide outstanding service to our clients because of our
+                dedication to professionalism, responsiveness, and quality.
+              </p>
+              <p>
+                Please call us today — we&apos;ll be happy to offer you a free
+                initial consultation. Thanks for visiting!
+              </p>
+            </div>
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+              <a
+                href={site.phoneHref}
+                className="btn-primary"
+              >
+                <Phone className="h-4 w-4" aria-hidden />
+                Call {site.phone}
+              </a>
+              {site.calendlyUrl ? (
+                <a
+                  href={site.calendlyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-secondary"
+                >
+                  <Calendar className="h-4 w-4" aria-hidden />
+                  Free consultation
+                </a>
+              ) : null}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* How it works */}
       <section className="border-b border-slate-100 bg-white">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">

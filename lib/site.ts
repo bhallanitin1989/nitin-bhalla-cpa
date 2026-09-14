@@ -23,7 +23,7 @@ export const site = {
   // No public email is published on this site. Add one here when available.
   email: null as string | null,
   /** Set your Calendly (or booking) URL to show “Book a consultation” buttons. */
-  calendlyUrl: "https://calendly.com/blueinktaxes/30min" as string | null,
+  calendlyUrl: "https://calendly.com/blueinktaxes/discovery-call" as string | null,
   /** Set your client portal URL to show the portal button in the Header only. */
   clientPortalUrl: "https://www.blueinktaxes.com/login" as string | null,
   tagline:

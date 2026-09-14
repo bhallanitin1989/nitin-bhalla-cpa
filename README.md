@@ -42,7 +42,7 @@ calendlyUrl: "https://calendly.com/your-link" as string | null,
 clientPortalUrl: "https://www.example.com/login" as string | null,
 ```
 
-When non-null, Header / Home / Contact / Footer show **Book a consultation** and **Client portal** buttons (open in a new tab with `rel="noopener noreferrer"`). When `null`, those buttons are omitted. Current values: Calendly `https://calendly.com/blueinktaxes/30min`, portal `https://www.blueinktaxes.com/login`.
+When non-null, Header / Home / Contact / Footer show **Book a consultation** and **Client portal** buttons (open in a new tab with `rel="noopener noreferrer"`). When `null`, those buttons are omitted. Current values: Calendly `https://calendly.com/blueinktaxes/discovery-call`, portal `https://www.blueinktaxes.com/login`.
 
 **Virtual firm:** `virtualFirm: true` and `showAddress: false` hide the street address across the UI. Address data remains in `site.address` for legal/records only.
 

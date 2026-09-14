@@ -1,12 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 437 150" width="437" height="150" role="img" aria-label="NB Tax and Advisory, CPA">
   <title>NB Tax and Advisory, CPA</title>
-  <!-- NB scaled ~82% and centered against the right stack -->
-  <g fill="none" stroke="#0f1b2d" stroke-width="3.1" stroke-linecap="square" stroke-linejoin="miter" transform="translate(18, 22) scale(0.82)">
-    <!-- N -->
+  <g fill="none" stroke="#0f1b2d" stroke-width="3.1" stroke-linecap="square" stroke-linejoin="miter" transform="translate(18, 13.5) scale(0.82)">
     <path d="M32 28v94"/>
     <path d="M32 28l50 94"/>
     <path d="M82 28v94"/>
-    <!-- B -->
     <path d="M104 28v94"/>
     <path d="M104 28h28c14 0 22 7.5 22 20S146 68 132 68H104"/>
     <path d="M104 68h30c15 0 24 8.5 24 23S149 122 134 122H104"/>

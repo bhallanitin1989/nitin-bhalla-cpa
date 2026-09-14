@@ -226,9 +226,6 @@ export default function HomePage() {
               Welcome
             </p>
             <div className="gold-divider mx-auto mt-3" />
-            <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
-              A full-service New York accounting firm.
-            </h2>
             <div className="mt-6 space-y-4 text-lg leading-relaxed text-slate-600">
               <p>
                 We are a full-service accounting firm licensed in NY. We offer a

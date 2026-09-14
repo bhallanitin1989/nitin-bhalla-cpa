@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 437 150" width="437" height="150" role="img" aria-label="NB Tax and Advisory, CPA">
   <title>NB Tax and Advisory, CPA</title>
-  <g fill="none" stroke="#0f1b2d" stroke-width="3.1" stroke-linecap="square" stroke-linejoin="miter">
+  <!-- NB scaled ~82% and centered against the right stack -->
+  <g fill="none" stroke="#0f1b2d" stroke-width="3.1" stroke-linecap="square" stroke-linejoin="miter" transform="translate(18, 22) scale(0.82)">
     <!-- N -->
     <path d="M32 28v94"/>
     <path d="M32 28l50 94"/>
@@ -10,10 +11,10 @@
     <path d="M104 28h28c14 0 22 7.5 22 20S146 68 132 68H104"/>
     <path d="M104 68h30c15 0 24 8.5 24 23S149 122 134 122H104"/>
   </g>
-  <line x1="172" y1="28" x2="172" y2="122" stroke="#0f1b2d" stroke-width="1"/>
+  <line x1="160" y1="28" x2="160" y2="122" stroke="#0f1b2d" stroke-width="1"/>
   <g fill="#0f1b2d" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" letter-spacing="0.28em">
-    <text x="190" y="52">TAX &amp;</text>
-    <text x="190" y="80">ADVISORY</text>
-    <text x="190" y="108">CPA</text>
+    <text x="178" y="52">TAX &amp;</text>
+    <text x="178" y="80">ADVISORY</text>
+    <text x="178" y="108">CPA</text>
   </g>
 </svg>

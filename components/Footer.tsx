@@ -27,7 +27,7 @@ export default function Footer() {
             {site.legalName} d/b/a {site.brandName}
           </p>
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-slate-500">
-            New York CPA support for business owners, executives, and independent professionals.
+            New York CPA specializing in tax notices and foreign filings — plus returns, accounting, financial statement audits, and planning.
           </p>
         </div>
 

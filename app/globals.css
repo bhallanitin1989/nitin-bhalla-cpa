@@ -1,23 +1,35 @@
 @import "tailwindcss";
 
 :root {
-  --navy-950: #0b1220;
-  --navy-900: #0f1b2d;
-  --navy-800: #1a2b45;
-  --slate-700: #334155;
-  --slate-600: #475569;
+  /* Ink navy — deeper, more distinctive than stock slate-navy */
+  --navy-950: #070d18;
+  --navy-900: #0b1526;
+  --navy-800: #152438;
+  --navy-700: #1e3350;
+  --slate-700: #2f3b4d;
+  --slate-600: #4a5568;
   --slate-500: #64748b;
-  --slate-100: #f1f5f9;
-  --slate-50: #f8fafc;
-  --cream: #faf7f2;
-  --cream-100: #f3eee6;
-  --teal-600: #0d9488;
-  --teal-500: #14b8a6;
-  --teal-400: #2dd4bf;
-  --teal-50: #f0fdfa;
-  --gold-500: #b8944a;
-  --gold-400: #c9a85c;
-  --gold-50: #faf6ee;
+  --slate-100: #eef2f6;
+  --slate-50: #f7f9fb;
+  /* Warm parchment */
+  --cream: #f8f4ee;
+  --cream-100: #efe8dc;
+  --cream-200: #e4d9c8;
+  /* Deep teal for CTAs — credible, not neon */
+  --teal-700: #0a6b63;
+  --teal-600: #0d7c73;
+  --teal-500: #14968b;
+  --teal-400: #2bb5a8;
+  --teal-50: #e8f7f5;
+  /* Copper accent — memorable without looking flashy */
+  --copper-600: #a86b2d;
+  --copper-500: #c17f3a;
+  --copper-400: #d49955;
+  --copper-50: #faf3e8;
+  /* Legacy gold aliases → copper (keeps existing class names working) */
+  --gold-500: var(--copper-500);
+  --gold-400: var(--copper-400);
+  --gold-50: var(--copper-50);
   --white: #ffffff;
 }
 
@@ -25,6 +37,7 @@
   --color-navy-950: var(--navy-950);
   --color-navy-900: var(--navy-900);
   --color-navy-800: var(--navy-800);
+  --color-navy-700: var(--navy-700);
   --color-slate-700: var(--slate-700);
   --color-slate-600: var(--slate-600);
   --color-slate-500: var(--slate-500);
@@ -32,18 +45,23 @@
   --color-slate-50: var(--slate-50);
   --color-cream: var(--cream);
   --color-cream-100: var(--cream-100);
+  --color-cream-200: var(--cream-200);
+  --color-teal-700: var(--teal-700);
   --color-teal-600: var(--teal-600);
   --color-teal-500: var(--teal-500);
   --color-teal-400: var(--teal-400);
   --color-teal-50: var(--teal-50);
+  --color-copper-600: var(--copper-600);
+  --color-copper-500: var(--copper-500);
+  --color-copper-400: var(--copper-400);
+  --color-copper-50: var(--copper-50);
   --color-gold-500: var(--gold-500);
   --color-gold-400: var(--gold-400);
   --color-gold-50: var(--gold-50);
-  --font-sans: var(--font-source-sans);
-  --font-display: var(--font-source-serif);
+  --font-sans: var(--font-manrope);
+  --font-display: var(--font-fraunces);
 }
 
-/* Base styles in @layer so Tailwind utilities (e.g. text-white) win */
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -53,7 +71,7 @@
     background: var(--cream);
     color: var(--slate-700);
     font-family: var(--font-sans), system-ui, sans-serif;
-    font-size: 1.0625rem; /* 17px */
+    font-size: 1.0625rem;
     line-height: 1.7;
   }
 
@@ -61,10 +79,10 @@
   h2,
   h3,
   h4 {
-    font-family: var(--font-display), Georgia, serif;
+    font-family: var(--font-display), Georgia, "Times New Roman", serif;
     color: var(--navy-900);
-    letter-spacing: -0.02em;
-    line-height: 1.25;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
     font-weight: 600;
   }
 }
@@ -90,24 +108,29 @@
   top: 1rem;
 }
 
-/* Shared button patterns — friendlier, slightly larger */
 .btn-primary {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   border-radius: 9999px;
   background: var(--teal-600);
-  padding: 0.85rem 1.4rem;
+  padding: 0.9rem 1.5rem;
   font-size: 0.9375rem;
   font-weight: 600;
+  letter-spacing: 0.01em;
   color: white;
-  box-shadow: 0 1px 2px rgba(13, 148, 136, 0.2);
+  box-shadow:
+    0 1px 2px rgba(10, 107, 99, 0.25),
+    0 0 0 1px rgba(10, 107, 99, 0.15);
   transition: background-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
 }
 
 .btn-primary:hover {
   background: var(--teal-500);
-  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.25);
+  box-shadow:
+    0 6px 18px rgba(10, 107, 99, 0.28),
+    0 0 0 1px rgba(20, 150, 139, 0.2);
+  transform: translateY(-1px);
 }
 
 .btn-secondary {
@@ -115,21 +138,21 @@
   align-items: center;
   gap: 0.5rem;
   border-radius: 9999px;
-  border: 1px solid rgba(15, 27, 45, 0.14);
+  border: 1.5px solid rgba(11, 21, 38, 0.16);
   background: var(--white);
-  padding: 0.85rem 1.4rem;
+  padding: 0.9rem 1.5rem;
   font-size: 0.9375rem;
   font-weight: 600;
   color: var(--navy-900);
-  box-shadow: 0 1px 2px rgba(15, 27, 45, 0.04);
+  box-shadow: 0 1px 2px rgba(11, 21, 38, 0.04);
   transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .btn-secondary:hover {
-  border-color: var(--teal-600);
-  background: var(--teal-50);
-  color: var(--teal-600);
-  box-shadow: 0 2px 8px rgba(13, 148, 136, 0.12);
+  border-color: var(--copper-500);
+  background: var(--copper-50);
+  color: var(--copper-600);
+  box-shadow: 0 2px 10px rgba(193, 127, 58, 0.14);
 }
 
 .btn-secondary-on-dark {
@@ -137,9 +160,9 @@
   align-items: center;
   gap: 0.5rem;
   border-radius: 9999px;
-  border: 1px solid rgba(255, 255, 255, 0.32);
+  border: 1.5px solid rgba(255, 255, 255, 0.38);
   background: transparent;
-  padding: 0.85rem 1.4rem;
+  padding: 0.9rem 1.5rem;
   font-size: 0.9375rem;
   font-weight: 600;
   color: white;
@@ -148,12 +171,49 @@
 
 .btn-secondary-on-dark:hover {
   background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(212, 153, 85, 0.7);
+}
+
+.btn-copper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  background: var(--copper-500);
+  padding: 0.9rem 1.5rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0 1px 2px rgba(168, 107, 45, 0.3);
+  transition: background-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.btn-copper:hover {
+  background: var(--copper-400);
+  box-shadow: 0 6px 18px rgba(193, 127, 58, 0.32);
+  transform: translateY(-1px);
 }
 
 .gold-divider {
   height: 3px;
-  width: 2.75rem;
+  width: 3rem;
   border-radius: 9999px;
-  background: linear-gradient(90deg, var(--gold-500), var(--gold-400), var(--teal-400));
+  background: linear-gradient(90deg, var(--copper-500), var(--copper-400), var(--teal-400));
+}
+
+.accent-eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal-600);
+}
+
+.card-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(11, 21, 38, 0.08);
 }

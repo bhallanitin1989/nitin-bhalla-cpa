@@ -27,16 +27,17 @@ export const site = {
   /** Set your client portal URL to show the portal button in the Header only. */
   clientPortalUrl: "https://www.blueinktaxes.com/login" as string | null,
   tagline:
-    "Clear tax preparation, planning, and IRS support from a New York CPA firm.",
+    "New York CPA specializing in IRS & state tax notices and foreign filings — plus individual & business returns, accounting, financial statement audits, and year-round tax support.",
   focus: [
+    "Specialty: IRS & state tax notice resolution",
+    "Specialty: International & foreign tax (FBAR, 5471, 8938)",
     "Individual & business tax preparation",
+    "Accounting & bookkeeping support",
+    "Financial statement & attestation audits",
+    "IRS representation (tax notices)",
     "S-corp and LLC returns",
-    "International tax services",
-    "Payroll & compliance",
-    "IRS representation",
-    "Tax relief & resolution support",
     "Tax planning",
-    "Bookkeeping support",
+    "Payroll & compliance",
   ],
   disclaimer:
     "This website provides general information and is not tax advice. NB Tax and Advisory, CPA is a d/b/a of Nitin Bhalla CPA PC. Please contact the firm to discuss your specific situation.",

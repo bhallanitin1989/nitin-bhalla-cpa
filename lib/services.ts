@@ -33,6 +33,30 @@ export const services: ServiceItem[] = [
       "Individual and business tax preparation from NB Tax and Advisory, CPA — New York CPA support for accurate annual filings.",
   },
   {
+    slug: "international-tax",
+    title: "International tax services",
+    navLabel: "International tax services",
+    summary:
+      "Local New York–metro help for FBAR, Forms 5471/8938, foreign income, and inbound/outbound cross-border reporting — plus penalty-path coordination when prior years were missed.",
+    heroEyebrow: "International tax",
+    body: [
+      "Cross-border ownership and foreign accounts create information-reporting duties that are easy to miss and costly when overlooked. NB Tax and Advisory, CPA works with New York–area individuals and owners — and clients nearby — who need U.S. international reporting done carefully.",
+      "Support may include outbound forms such as 5471, 8865, and 8858; inbound forms such as 5472 and 1040-NR; FBAR (FinCEN 114) and Form 8938 (FATCA); and high-level guidance for Americans abroad on exclusions and foreign tax credits. When prior years were missed, we can also coordinate educational discussion of penalty-relief pathways with IRS representation or tax relief work when appropriate.",
+      "International tax rules change. This page is general information only — not tax advice — and does not guarantee outcomes. Confirm current IRS and FinCEN requirements for your facts, and contact the firm to discuss your situation.",
+    ],
+    points: [
+      "Local NY-metro focus for foreign & cross-border clients",
+      "Outbound reporting for U.S. persons with foreign entities",
+      "Inbound reporting for foreign-owned U.S. entities",
+      "Key forms: 5471, 5472, 8865, 8858, 1040-NR, 3520 (as applicable)",
+      "FBAR (FinCEN 114) and Form 8938 (FATCA) support",
+      "Expat basics: FEIE and foreign tax credit awareness",
+      "Penalty-relief coordination when filings were missed",
+    ],
+    metaDescription:
+      "International tax for New York–area clients from NB Tax and Advisory, CPA — FBAR, Forms 5471/8938, foreign income, and cross-border reporting.",
+  },
+  {
     slug: "s-corp-llc",
     title: "S-corp & LLC returns",
     navLabel: "S-corp & LLC returns",
@@ -81,7 +105,7 @@ export const services: ServiceItem[] = [
     title: "IRS representation",
     navLabel: "IRS representation",
     summary:
-      "IRS representation support when you need a professional voice with the IRS.",
+      "CPA representation when IRS or state notices escalate and you need a professional voice with the agency.",
     heroEyebrow: "IRS representation",
     body: [
       "When the IRS contacts you, you do not have to navigate every letter alone. With proper IRS representation authorization, NB Tax and Advisory, CPA can communicate with the IRS on matters covered by that authorization.",
@@ -122,15 +146,15 @@ export const services: ServiceItem[] = [
   },
   {
     slug: "bookkeeping",
-    title: "Bookkeeping support",
-    navLabel: "Bookkeeping support",
+    title: "Accounting & bookkeeping support",
+    navLabel: "Accounting & bookkeeping",
     summary:
-      "Support keeping books organized enough for clean tax filings and clearer business decisions.",
-    heroEyebrow: "Bookkeeping",
+      "Accounting and bookkeeping support to keep books organized for clean tax filings and clearer business decisions.",
+    heroEyebrow: "Accounting & bookkeeping",
     body: [
-      "Clean books make tax season smoother and help owners see how the business is performing. NB Tax and Advisory, CPA provides bookkeeping support focused on categorization, reconciliations, and reports that make sense — without unnecessary complexity.",
+      "Clean books make tax season smoother and help owners see how the business is performing. NB Tax and Advisory, CPA provides accounting and bookkeeping support focused on categorization, reconciliations, and reports that make sense — without unnecessary complexity.",
       "Engagements are scoped to what you need: cleanup before filing, ongoing categorization guidance, or help getting records ready for a return.",
-      "Bookkeeping support is educational and operational assistance — not a substitute for management decisions. Contact the firm to discuss scope.",
+      "Accounting and bookkeeping support is educational and operational assistance — not a substitute for management decisions. Contact the firm to discuss scope.",
     ],
     points: [
       "Book cleanup for tax season",
@@ -140,30 +164,29 @@ export const services: ServiceItem[] = [
       "Coordination with tax preparation",
     ],
     metaDescription:
-      "Bookkeeping support from NB Tax and Advisory, CPA — cleanup, categorization, and reports that support clean filings.",
+      "Accounting and bookkeeping support from NB Tax and Advisory, CPA — cleanup, categorization, and reports that support clean filings.",
   },
   {
-    slug: "international-tax",
-    title: "International tax services",
-    navLabel: "International tax services",
+    slug: "financial-statement-audits",
+    title: "Financial statement & attestation audits",
+    navLabel: "Financial statement audits",
     summary:
-      "Outbound and inbound international information reporting — Forms 5471, 5472, 8865, 1040-NR, FBAR, and FATCA — plus high-level expat support and penalty-relief coordination.",
-    heroEyebrow: "International tax",
+      "Financial statement and attestation audit engagements for businesses that need independent CPA assurance — distinct from IRS or state tax-audit notice work.",
+    heroEyebrow: "Financial statement & attestation audits",
     body: [
-      "Cross-border ownership and foreign accounts create information-reporting duties that are easy to miss and costly when overlooked. NB Tax and Advisory, CPA helps U.S. persons with foreign interests and foreign owners of U.S. entities understand which forms may apply and prepare filings with care.",
-      "Support may include outbound forms such as 5471, 8865, and 8858; inbound forms such as 5472 and 1040-NR; FBAR (FinCEN 114) and Form 8938 (FATCA); and high-level guidance for Americans abroad on exclusions and foreign tax credits. When prior years were missed, we can also coordinate educational discussion of penalty-relief pathways with IRS representation or tax relief work when appropriate.",
-      "International tax rules change. This page is general information only — not tax advice — and does not guarantee outcomes. Confirm current IRS and FinCEN requirements for your facts, and contact the firm to discuss your situation.",
+      "Financial statement and attestation audits are different from IRS or state tax-audit notices. When lenders, owners, boards, or other parties need independent CPA assurance on financial statements — or related attestation work — NB Tax and Advisory, CPA discusses scope, timing, and what the engagement will cover.",
+      "Engagements are planned and performed under applicable professional standards for the type of assurance requested. We explain the difference between a financial statement audit and tax-return or tax-notice work so expectations stay clear.",
+      "This page is general information only. Outcomes and deliverables depend on your facts, the agreed scope, and applicable standards. Contact the firm to discuss whether a financial statement or attestation engagement may fit.",
     ],
     points: [
-      "Outbound reporting for U.S. persons with foreign entities",
-      "Inbound reporting for foreign-owned U.S. entities",
-      "Key forms: 5471, 5472, 8865, 8858, 1040-NR, 3520 (as applicable)",
-      "FBAR (FinCEN 114) and Form 8938 (FATCA) support",
-      "Expat basics: FEIE and foreign tax credit awareness",
-      "Penalty-relief coordination when filings were missed",
+      "Financial statement audit engagements (as scoped)",
+      "Attestation and related assurance discussions",
+      "Clear distinction from IRS/state tax-audit notice work",
+      "Planning conversations on scope, timing, and deliverables",
+      "Coordination with accounting records when helpful",
     ],
     metaDescription:
-      "International tax services from NB Tax and Advisory, CPA — Forms 5471, 5472, 8865, FBAR, FATCA, expat support, and penalty-relief coordination.",
+      "Financial statement and attestation audits from NB Tax and Advisory, CPA — independent CPA assurance, distinct from IRS tax-audit notice resolution.",
   },
 ];
 

@@ -16,9 +16,9 @@ import {
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "International tax services",
+  title: "International & Foreign Tax (NY Metro)",
   description:
-    "Outbound and inbound international tax reporting from NB Tax and Advisory, CPA — Forms 5471, 5472, 8865, 1040-NR, FBAR, FATCA, expat support, and penalty-relief coordination.",
+    "Local New York–area CPA help for FBAR, Forms 5471/8938, foreign income, and cross-border reporting — outbound and inbound international tax from NB Tax and Advisory, CPA.",
 };
 
 const whoHelps = [
@@ -139,18 +139,19 @@ export default function InternationalTaxPage() {
           }}
         />
         <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-          <p className="text-sm font-semibold uppercase tracking-wider text-teal-500">
-            International tax services
+          <p className="text-sm font-bold uppercase tracking-[0.14em] text-copper-400">
+            FBAR · 5471 / 8938 · Foreign income · NY metro clients
           </p>
           <div className="gold-divider mt-3" />
           <h1 className="mt-4 max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl">
-            Cross-border reporting, explained clearly — and filed with care.
+            Local CPA help for foreign accounts, entities, and cross-border income.
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-100/80">
-            Whether you are a U.S. person with foreign companies or accounts, or
-            a foreign owner with U.S. activity, {site.firmName} helps sort which
-            forms may apply and prepare the international information returns
-            that keep you on the right side of IRS and FinCEN rules.
+            A specialty of {site.firmName}: New York–area individuals and owners
+            with foreign ties — FBAR, Forms 5471 and 8938, foreign income,
+            inbound U.S. activity, and catch-up when prior years were missed.
+            International reporting prepared with CPA care — virtually, without
+            an office visit.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             {site.calendlyUrl ? (
@@ -180,17 +181,17 @@ export default function InternationalTaxPage() {
       {/* Who this helps */}
       <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-wider text-teal-600">
+          <p className="text-sm font-bold uppercase tracking-[0.12em] text-teal-600">
             Who this helps
           </p>
           <div className="gold-divider mt-3" />
           <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
-            Outbound and inbound — different forms, same need for accuracy.
+            Built for local clients with foreign ties — outbound and inbound.
           </h2>
           <p className="mt-3 text-slate-600">
-            International tax obligations usually fall into two directions. The
-            paperwork differs; the importance of timely, complete filing does
-            not.
+            Whether you live in the New York metro with accounts abroad, or you
+            are a foreign owner with U.S. activity, the paperwork differs — the
+            need for timely, complete filing does not.
           </p>
         </div>
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
@@ -627,12 +628,12 @@ export default function InternationalTaxPage() {
         <div className="rounded-3xl bg-navy-900 px-6 py-12 text-white sm:px-12 sm:flex sm:items-center sm:justify-between sm:gap-8">
           <div>
             <h2 className="text-3xl font-semibold text-white sm:text-4xl">
-              Ready to sort your international filings?
+              Foreign accounts or Form 5471 on your list?
             </h2>
             <p className="mt-3 max-w-xl text-slate-100/80">
               Book a consultation or call {site.firmName} at {site.phone}. Bring
-              what you have — ownership charts, prior returns, or foreign account
-              summaries — and we will help you understand sensible next steps.
+              ownership charts, prior returns, or foreign account summaries —
+              we will map which filings may apply for your New York–area situation.
             </p>
           </div>
           <div className="mt-8 flex flex-wrap gap-3 sm:mt-0 sm:shrink-0">

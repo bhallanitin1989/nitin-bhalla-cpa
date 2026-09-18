@@ -18,9 +18,9 @@ import { taxReliefItems } from "@/lib/tax-relief";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Tax Relief",
+  title: "Tax Relief & Notice Resolution",
   description:
-    "CPA-led tax relief and IRS resolution support from NB Tax and Advisory, CPA — unfiled returns, notices, installment agreements, penalty relief, and more.",
+    "CPA-led IRS and state tax notice resolution from NB Tax and Advisory, CPA — collections, audits, unfiled returns, installment agreements, penalty relief, and more.",
 };
 
 const icons = {
@@ -83,21 +83,23 @@ export default function TaxReliefPage() {
           aria-hidden
           style={{
             backgroundImage:
-              "radial-gradient(circle at 20% 20%, rgba(20,184,166,0.35), transparent 40%), radial-gradient(circle at 80% 0%, rgba(255,255,255,0.08), transparent 35%)",
+              "radial-gradient(circle at 20% 20%, rgba(20,150,139,0.38), transparent 42%), radial-gradient(circle at 85% 0%, rgba(193,127,58,0.2), transparent 38%)",
           }}
         />
         <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-          <p className="text-sm font-semibold uppercase tracking-wider text-teal-500">
-            Tax relief &amp; IRS resolution
+          <p className="text-sm font-bold uppercase tracking-[0.14em] text-copper-400">
+            IRS &amp; state notices · Collections · Audits · Tax relief
           </p>
-          <h1 className="mt-3 max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl">
-            Facing IRS pressure? Start with a calm, professional conversation.
+          <div className="gold-divider mt-3" />
+          <h1 className="mt-4 max-w-3xl text-4xl font-semibold leading-tight text-white sm:text-5xl">
+            That tax notice is not going away on its own — talk to a CPA who handles them.
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-100/80">
-            Unfiled returns, balances due, and collection notices can feel
-            overwhelming. {site.firmName} helps individuals and businesses
-            understand their options and work toward a practical path forward —
-            with CPA-led IRS representation when appropriate.
+            A specialty of {site.firmName}: IRS and state collection letters,
+            tax-audit correspondence, balances due, levies, liens, and unfiled
+            years. We help you understand what the agency wants and pursue a
+            practical resolution path — with CPA-led representation when
+            appropriate.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
@@ -121,11 +123,12 @@ export default function TaxReliefPage() {
       <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wider text-teal-600">
-              A steadier way forward
+            <p className="text-sm font-bold uppercase tracking-[0.12em] text-teal-600">
+              Notice resolution, done properly
             </p>
-            <h2 className="mt-2 text-3xl font-semibold sm:text-4xl">
-              CPA-led tax relief support, explained in plain language.
+            <div className="gold-divider mt-3" />
+            <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
+              CPA-led help for IRS and state pressure — without the sales script.
             </h2>
             <div className="mt-5 space-y-4 text-base leading-relaxed text-slate-600">
               <p>
@@ -284,12 +287,12 @@ export default function TaxReliefPage() {
         <div className="rounded-3xl bg-navy-900 px-6 py-12 text-white sm:px-12 sm:flex sm:items-center sm:justify-between sm:gap-8">
           <div>
             <h2 className="text-3xl font-semibold text-white sm:text-4xl">
-              Ready to talk about your tax situation?
+              Bring the notice. We will map the next steps.
             </h2>
             <p className="mt-3 max-w-xl text-slate-100/80">
-              Call {site.firmName} at {site.phone}. Bring what you have — notices,
-              prior returns, or simply a description of where things stand — and
-              we will help you understand sensible next steps.
+              Call {site.firmName} at {site.phone}. Bring IRS or state letters,
+              prior returns, or a clear description of where things stand — and
+              we will help you understand sensible options.
             </p>
           </div>
           <div className="mt-8 flex flex-wrap gap-3 sm:mt-0 sm:shrink-0">

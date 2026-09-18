@@ -34,25 +34,25 @@ export const taxReliefItems: TaxReliefItem[] = [
   },
   {
     slug: "irs-notices",
-    title: "IRS notices & correspondence",
-    navLabel: "IRS notices",
+    title: "IRS & state notices",
+    navLabel: "IRS & state notices",
     summary:
-      "Calm, careful review of IRS letters and notices, with IRS representation when appropriate.",
-    heroEyebrow: "IRS notices",
+      "Calm, careful review of IRS and state tax letters and notices, with CPA representation when appropriate.",
+    heroEyebrow: "IRS & state notices",
     body: [
-      "IRS letters deserve a careful response — not panic. NB Tax and Advisory, CPA reviews notices, explains what they appear to request in plain language, and helps you plan next steps.",
-      "With IRS representation authorization in place, the firm can communicate with the IRS on authorized matters so you are not left fielding every call alone. We will not claim that every notice disappears overnight; we focus on accurate understanding and organized follow-through.",
+      "IRS and state tax letters deserve a careful response — not panic. NB Tax and Advisory, CPA reviews notices, explains what they appear to request in plain language, and helps you plan next steps.",
+      "With representation authorization in place, the firm can communicate with the IRS on authorized matters so you are not left fielding every call alone. We will not claim that every notice disappears overnight; we focus on accurate understanding and organized follow-through.",
       "Bring the notice (or a clear photo) when you call. This content is educational only and is not advice for your specific letter.",
     ],
     points: [
-      "Notice and letter review",
+      "IRS & state notice and letter review",
       "Plain-language explanation of requests",
-      "IRS representation when appropriate",
+      "CPA representation when appropriate",
       "Organized response planning",
       "Coordination with filings and balances due",
     ],
     metaDescription:
-      "IRS notice review and CPA representation from NB Tax and Advisory, CPA — IRS representation support when appropriate.",
+      "IRS and state tax notice review and CPA representation from NB Tax and Advisory, CPA.",
   },
   {
     slug: "installment-agreements",

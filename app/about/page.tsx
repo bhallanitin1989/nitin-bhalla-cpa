@@ -20,11 +20,13 @@ export default function AboutPage() {
           </p>
           <div className="gold-divider mt-3" />
           <h1 className="mt-4 max-w-3xl text-4xl font-semibold sm:text-5xl">
-            A New York CPA practice built on clarity and care.
+            A New York CPA focused on clarity — with clear specialties.
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-slate-600">
             {site.brandName} is led by {site.principal}, a licensed Certified
-            Public Accountant in New York — serving business owners, executives, and independent professionals.
+            Public Accountant in New York. The firm specializes in tax notices
+            and foreign filings, and also helps with returns, accounting,
+            financial statement audits, and year-round tax support.
           </p>
         </div>
       </section>
@@ -32,16 +34,19 @@ export default function AboutPage() {
       <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="max-w-3xl space-y-5 text-base leading-relaxed text-slate-600">
           <p>
-            Clients come when they want accurate filings, thoughtful planning,
-            and someone who explains the &ldquo;why&rdquo; behind the numbers —
-            whether that is an individual return, a first-year 1099 filing, or
-            an S-corp that needs careful coordination.
+            Many clients find the firm for specialty work: IRS or state tax
+            notices, tax audit correspondence, and foreign/international
+            reporting such as FBAR and Forms 5471/8938. Others come for accurate
+            annual filings, thoughtful planning, and someone who explains the
+            &ldquo;why&rdquo; behind the numbers.
           </p>
           <p>
-            {site.principal} focuses on tax preparation, entity returns,
-            payroll and compliance, IRS representation, tax
-            planning, and bookkeeping support. Engagements are scoped to what
-            you need — not a one-size package.
+            Beyond those specialties, {site.principal} provides individual and
+            business tax preparation, S-corp and LLC returns, accounting and
+            bookkeeping support, financial statement and attestation audits,
+            payroll and compliance, IRS representation for tax notices, and tax
+            planning. Engagements are scoped to what you need — not a one-size
+            package.
           </p>
           <p>
             Trust is earned in the work: meeting deadlines, returning calls,

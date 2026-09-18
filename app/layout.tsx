@@ -1,25 +1,25 @@
 import type { Metadata } from "next";
-import { Source_Sans_3, Source_Serif_4 } from "next/font/google";
+import { Fraunces, Manrope } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { site } from "@/lib/site";
 import "./globals.css";
 
-const sourceSans = Source_Sans_3({
-  variable: "--font-source-sans",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
   display: "swap",
 });
 
-const sourceSerif = Source_Serif_4({
-  variable: "--font-source-serif",
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
   subsets: ["latin"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
   title: {
-    default: `${site.brandName} | New York CPA`,
+    default: `${site.brandName} | Tax Notices & Foreign Filings CPA`,
     template: `%s | ${site.brandName}`,
   },
   description: site.tagline,
@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sourceSans.variable} ${sourceSerif.variable} flex min-h-screen flex-col bg-cream antialiased`}
+        className={`${manrope.variable} ${fraunces.variable} flex min-h-screen flex-col bg-cream antialiased`}
       >
         <a href="#main" className="skip-link">
           Skip to main content
